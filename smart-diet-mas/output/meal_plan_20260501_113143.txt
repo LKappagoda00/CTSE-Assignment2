@@ -1,0 +1,75 @@
+============================================================
+  SMART DIET & NUTRITION — PERSONALIZED MEAL PLAN
+============================================================
+  Generated: 2026-05-01 11:31
+
+────────────────────────────────────────────────────────────
+  USER PROFILE
+────────────────────────────────────────────────────────────
+  Name.......................... lahiru kappagoda
+  Age........................... 26
+  Gender........................ male
+  Weight Kg..................... 50.0
+  Height Cm..................... 170.0
+  Activity Level................ moderately_active
+  Dietary Goal.................. weight_loss
+  Allergies..................... []
+  Cultural Preference........... sri_lankan
+
+────────────────────────────────────────────────────────────
+  BMI ANALYSIS
+────────────────────────────────────────────────────────────
+  BMI Value: 17.3
+  Category:  underweight
+  Note:      BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.
+
+────────────────────────────────────────────────────────────
+  DAILY MEAL PLAN (Day 1)
+  Culture: sri_lankan
+  Target: 1729.0 kcal
+────────────────────────────────────────────────────────────
+
+  ◆ BREAKFAST (669.5 kcal)
+  ········································
+    • Kottu Roti (Vegetable)         1 plate (300g)       420.0 kcal | P:12.0g C:52.0g F:18.0g
+    • Sri Lankan Chicken Curry       ~50% of 1 cup (200g) 142.5 kcal | P:14.0g C:4.0g F:8.0g
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Plain Tea                      1 cup (240ml)        2.0 kcal | P:0.0g C:0.5g F:0.0g
+
+  ◆ LUNCH (550.0 kcal)
+  ········································
+    • Wheat Roti                     2 pieces (120g)      220.0 kcal | P:7.0g C:36.0g F:5.0g
+    • Sri Lankan Chicken Curry       1 cup (200g)         285.0 kcal | P:28.0g C:8.0g F:16.0g
+    • Gotukola Sambol (Pennywort Salad) 1 cup (100g)         45.0 kcal | P:2.5g C:5.0g F:2.0g
+
+  ◆ DINNER (390.0 kcal)
+  ········································
+    • Idli (Steamed Rice Cake)       3 pieces (150g)      175.0 kcal | P:4.0g C:36.0g F:0.5g
+    • Boiled Eggs                    2 large (100g)       155.0 kcal | P:12.6g C:1.1g F:10.6g
+    • Mallung (Leafy Green Stir-fry) 1 cup (100g)         60.0 kcal | P:3.0g C:6.0g F:3.0g
+
+  ◆ SNACK (195.0 kcal)
+  ········································
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Dhal Curry (Red Lentils)       ~50% of 1 cup (200g) 90.0 kcal | P:6.0g C:14.0g F:1.5g
+
+  ── DAILY TOTALS ──
+  Calories:  1804.5 kcal
+  Protein:   91.7 g
+  Carbs:     216.6 g
+  Fat:       65.4 g
+
+────────────────────────────────────────────────────────────
+  CALORIE ANALYSIS
+────────────────────────────────────────────────────────────
+  Target:    1729.0 kcal
+  Actual:    1804.5 kcal
+  Deviation: 4.4%
+  Meets Goal: ✓ Yes
+
+  Recommendations:
+    → Add more protein-rich foods to better meet macro targets
+
+============================================================
+  End of Report
+============================================================

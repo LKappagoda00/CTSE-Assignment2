@@ -1,0 +1,243 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 50.0,
+    "height_cm": 170.0,
+    "activity_level": "very_active",
+    "dietary_goal": "muscle_gain",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 17.3,
+    "category": "underweight",
+    "interpretation": "BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.",
+    "weight_kg": 50.0,
+    "height_cm": 170.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "String Hoppers (Idiyappam)",
+            "food_id": "string_hoppers",
+            "quantity": "5 pieces (150g)",
+            "calories": 180.0,
+            "protein_g": 3.5,
+            "carbs_g": 38.0,
+            "fat_g": 0.8,
+            "fiber_g": 1.2
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 442.0,
+        "total_protein_g": 17.4,
+        "total_carbs_g": 66.6,
+        "total_fat_g": 11.8,
+        "total_fiber_g": 4.3
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "White Rice (cooked)",
+            "food_id": "rice_white",
+            "quantity": "1 cup (200g)",
+            "calories": 206.0,
+            "protein_g": 4.3,
+            "carbs_g": 44.5,
+            "fat_g": 0.4,
+            "fiber_g": 0.6
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Mallung (Leafy Green Stir-fry)",
+            "food_id": "mallung",
+            "quantity": "1 cup (100g)",
+            "calories": 60.0,
+            "protein_g": 3.0,
+            "carbs_g": 6.0,
+            "fat_g": 3.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 531.0,
+        "total_protein_g": 20.3,
+        "total_carbs_g": 81.5,
+        "total_fat_g": 14.4,
+        "total_fiber_g": 14.6
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "Idli (Steamed Rice Cake)",
+            "food_id": "idli",
+            "quantity": "3 pieces (150g)",
+            "calories": 175.0,
+            "protein_g": 4.0,
+            "carbs_g": 36.0,
+            "fat_g": 0.5,
+            "fiber_g": 1.0
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Vegetable Curry (Coconut Milk)",
+            "food_id": "coconut_milk_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 160.0,
+            "protein_g": 4.0,
+            "carbs_g": 12.0,
+            "fat_g": 11.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 590.0,
+        "total_protein_g": 44.0,
+        "total_carbs_g": 51.0,
+        "total_fat_g": 22.5,
+        "total_fiber_g": 7.0
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 260.0,
+        "total_protein_g": 13.9,
+        "total_carbs_g": 28.1,
+        "total_fat_g": 11.0,
+        "total_fiber_g": 3.1
+      }
+    ],
+    "total_daily_calories": 1823.0,
+    "total_protein_g": 95.6,
+    "total_carbs_g": 227.2,
+    "total_fat_g": 59.7,
+    "total_fiber_g": 29.0,
+    "target_calories": 2781.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "muscle_gain",
+    "llm_suggestions": [
+      "Increase protein intake to 1.6g/kg body weight (80.8g) for muscle gain",
+      "Add more complex carbohydrates such as whole grains, fruits, and vegetables to the meal plan to meet daily caloric needs of 2781kcal",
+      "Incorporate healthy fats like nuts, seeds, and avocados to reach the target fat intake of 59.7g",
+      "Consider adding calorie-dense foods like dried fruits, granola, or trail mix to increase overall calorie intake"
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "Eat with your right hand, as the left is considered unclean.",
+      "Use a spoon to eat string hoppers and other steamed dishes.",
+      "It's customary to finish a meal completely, as leaving food on the plate can indicate that the host did not provide enough."
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 2781.0,
+    "actual_calories": 1823.0,
+    "calorie_deviation": -34.4,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 80.0,
+    "actual_protein": 95.6,
+    "macronutrient_breakdown": {
+      "protein_pct": 20.9,
+      "carbs_pct": 49.7,
+      "fat_pct": 29.4
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 34.4% below target"
+    ]
+  },
+  "final_report": "Lahiru Kappagoda,\n\nThis nutrition analysis reveals that your current meal plan falls short of meeting your muscle gain goals, with an actual calorie intake of 1823.0 kcal, resulting in a deviation of -34.4% from the target of 2781.0 kcal.\n\nYour protein content is also below the recommended amount at 95.6g, which is crucial for muscle growth and repair. Additionally, your macronutrient breakdown is not aligned with your goal, as carbohydrates should comprise approximately 55-60% of your daily intake to support muscle growth.\n\nThe plan's nutritional adequacy can be improved by increasing portion sizes or adding snacks to bridge the calorie gap. Aiming to increase daily caloric intake by 20-25% would help meet your target.\n\nTo enhance this meal plan, we recommend:\n\n1. Adding healthy fats like nuts and seeds to increase calorie density.\n2. Incorporating more protein-rich foods such as lean meats, fish, and dairy products to meet the daily protein requirement.\n3. Increasing carbohydrate intake from complex sources like whole grains, fruits, and vegetables.\n\nAs an underweight individual with a goal of muscle gain, it is essential to prioritize adequate nutrition to support growth and recovery. With these adjustments, you can create a more balanced meal plan that meets your needs and supports your goals."
+}

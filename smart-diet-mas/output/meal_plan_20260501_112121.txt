@@ -1,0 +1,76 @@
+============================================================
+  SMART DIET & NUTRITION — PERSONALIZED MEAL PLAN
+============================================================
+  Generated: 2026-05-01 11:21
+
+────────────────────────────────────────────────────────────
+  USER PROFILE
+────────────────────────────────────────────────────────────
+  Name.......................... lahiru kappagoda
+  Age........................... 26
+  Gender........................ male
+  Weight Kg..................... 78.0
+  Height Cm..................... 175.0
+  Activity Level................ moderately_active
+  Dietary Goal.................. weight_loss
+  Allergies..................... []
+  Cultural Preference........... sri_lankan
+
+────────────────────────────────────────────────────────────
+  BMI ANALYSIS
+────────────────────────────────────────────────────────────
+  BMI Value: 25.5
+  Category:  overweight
+  Note:      BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.
+
+────────────────────────────────────────────────────────────
+  DAILY MEAL PLAN (Day 1)
+  Culture: sri_lankan
+  Target: 2211.0 kcal
+────────────────────────────────────────────────────────────
+
+  ◆ BREAKFAST (409.0 kcal)
+  ········································
+    • Idli (Steamed Rice Cake)       3 pieces (150g)      175.0 kcal | P:4.0g C:36.0g F:0.5g
+    • Grilled White Fish             150g                 170.0 kcal | P:35.0g C:0.0g F:3.0g
+    • Papaya                         1 cup (145g)         62.0 kcal | P:0.7g C:16.0g F:0.4g
+    • Plain Tea                      1 cup (240ml)        2.0 kcal | P:0.0g C:0.5g F:0.0g
+
+  ◆ LUNCH (550.0 kcal)
+  ········································
+    • Hoppers (Appam)                2 pieces (120g)      210.0 kcal | P:3.8g C:40.0g F:3.5g
+    • Dhal Curry (Red Lentils)       1 cup (200g)         180.0 kcal | P:12.0g C:28.0g F:3.0g
+    • Vegetable Curry (Coconut Milk) 1 cup (200g)         160.0 kcal | P:4.0g C:12.0g F:11.0g
+
+  ◆ DINNER (405.0 kcal)
+  ········································
+    • String Hoppers (Idiyappam)     5 pieces (150g)      180.0 kcal | P:3.5g C:38.0g F:0.8g
+    • Dhal Curry (Red Lentils)       1 cup (200g)         180.0 kcal | P:12.0g C:28.0g F:3.0g
+    • Gotukola Sambol (Pennywort Salad) 1 cup (100g)         45.0 kcal | P:2.5g C:5.0g F:2.0g
+
+  ◆ SNACK (221.1 kcal)
+  ········································
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Boiled Eggs                    ~74% of 2 large (100g) 116.1 kcal | P:9.4g C:0.8g F:7.9g
+
+  ── DAILY TOTALS ──
+  Calories:  1585.1 kcal
+  Protein:   88.2 g
+  Carbs:     231.3 g
+  Fat:       35.5 g
+
+────────────────────────────────────────────────────────────
+  CALORIE ANALYSIS
+────────────────────────────────────────────────────────────
+  Target:    2211.0 kcal
+  Actual:    1585.1 kcal
+  Deviation: -28.3%
+  Meets Goal: ✗ No
+
+  Recommendations:
+    → Increase portions or add snacks — plan is 28.3% below target
+    → Add more protein-rich foods to better meet macro targets
+
+============================================================
+  End of Report
+============================================================

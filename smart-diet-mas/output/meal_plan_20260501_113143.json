@@ -1,0 +1,223 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 50.0,
+    "height_cm": 170.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 17.3,
+    "category": "underweight",
+    "interpretation": "BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.",
+    "weight_kg": 50.0,
+    "height_cm": 170.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Kottu Roti (Vegetable)",
+            "food_id": "kottu_roti",
+            "quantity": "1 plate (300g)",
+            "calories": 420.0,
+            "protein_g": 12.0,
+            "carbs_g": 52.0,
+            "fat_g": 18.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Sri Lankan Chicken Curry",
+            "food_id": "chicken_curry_sl",
+            "quantity": "~50% of 1 cup (200g)",
+            "calories": 142.5,
+            "protein_g": 14.0,
+            "carbs_g": 4.0,
+            "fat_g": 8.0,
+            "fiber_g": 1.0
+          },
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 669.5,
+        "total_protein_g": 27.3,
+        "total_carbs_g": 83.5,
+        "total_fat_g": 26.4,
+        "total_fiber_g": 8.1
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "Wheat Roti",
+            "food_id": "roti_wheat",
+            "quantity": "2 pieces (120g)",
+            "calories": 220.0,
+            "protein_g": 7.0,
+            "carbs_g": 36.0,
+            "fat_g": 5.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Sri Lankan Chicken Curry",
+            "food_id": "chicken_curry_sl",
+            "quantity": "1 cup (200g)",
+            "calories": 285.0,
+            "protein_g": 28.0,
+            "carbs_g": 8.0,
+            "fat_g": 16.0,
+            "fiber_g": 2.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          }
+        ],
+        "total_calories": 550.0,
+        "total_protein_g": 37.5,
+        "total_carbs_g": 49.0,
+        "total_fat_g": 23.0,
+        "total_fiber_g": 9.0
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "Idli (Steamed Rice Cake)",
+            "food_id": "idli",
+            "quantity": "3 pieces (150g)",
+            "calories": 175.0,
+            "protein_g": 4.0,
+            "carbs_g": 36.0,
+            "fat_g": 0.5,
+            "fiber_g": 1.0
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Mallung (Leafy Green Stir-fry)",
+            "food_id": "mallung",
+            "quantity": "1 cup (100g)",
+            "calories": 60.0,
+            "protein_g": 3.0,
+            "carbs_g": 6.0,
+            "fat_g": 3.0,
+            "fiber_g": 4.0
+          }
+        ],
+        "total_calories": 390.0,
+        "total_protein_g": 19.6,
+        "total_carbs_g": 43.1,
+        "total_fat_g": 14.1,
+        "total_fiber_g": 5.0
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "~50% of 1 cup (200g)",
+            "calories": 90.0,
+            "protein_g": 6.0,
+            "carbs_g": 14.0,
+            "fat_g": 1.5,
+            "fiber_g": 4.0
+          }
+        ],
+        "total_calories": 195.0,
+        "total_protein_g": 7.3,
+        "total_carbs_g": 41.0,
+        "total_fat_g": 1.9,
+        "total_fiber_g": 7.1
+      }
+    ],
+    "total_daily_calories": 1804.5,
+    "total_protein_g": 91.7,
+    "total_carbs_g": 216.6,
+    "total_fat_g": 65.4,
+    "total_fiber_g": 29.2,
+    "target_calories": 1729.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "Increase protein intake to at least 1.2g/kg body weight (93.8g) for muscle maintenance during weight loss",
+      "Incorporate more fiber-rich foods like legumes, whole grains, and fruits in breakfast and lunch options",
+      "Add healthy fats like nuts and seeds to meals to support overall nutrition and satisfaction",
+      "Consider adding a daily snack or meal replacement shake to increase calorie intake by 25-50 kcal/day"
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "Eat with your right hand, as using the left hand is considered impolite.",
+      "Use a spoon to eat rice and curry, as it is customary to hold the bowl in your left hand.",
+      "It is customary to finish all the food on your plate, as leaving food uneaten can be seen as a sign of disrespect."
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 1729.0,
+    "actual_calories": 1804.5,
+    "calorie_deviation": 4.4,
+    "meets_goal": true,
+    "protein_adequate": true,
+    "min_protein_needed": 40.0,
+    "actual_protein": 91.7,
+    "macronutrient_breakdown": {
+      "protein_pct": 20.1,
+      "carbs_pct": 47.6,
+      "fat_pct": 32.3
+    },
+    "recommendations": [
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Nutrition Report Summary for Laahiru Kappagoda's Weight Loss Meal Plan\n\nOverview:\nLahiru's meal plan has achieved an overall nutritional adequacy, meeting the target calorie intake of 1729 kcal with a deviation of only 4.4%. The macronutrient breakdown is also well-balanced, with protein at 91.7g, which exceeds the recommended 40g.\n\nAdherence to Goal:\nYes, Lahiru's meal plan meets his weight loss goal.\n\nKey Strengths:\nThe meal plan demonstrates a good balance of carbohydrates and fat, with a macronutrient distribution that is close to ideal. This suggests that Lahiru has made an effort to include a variety of foods in his diet.\n\nRecommendations for Improvement:\nTo further optimize the meal plan, we recommend adding more protein-rich foods to better meet the macro targets. Increasing protein intake by 10-15g would be beneficial in achieving a macronutrient distribution closer to ideal (P:20% C:47% F:33%). Additionally, incorporating more fibre-rich foods and healthy fats can help enhance satiety and overall nutrient quality.\n\nMotivational Note:\nCongratulations on taking the first step towards achieving your weight loss goal! With a few tweaks to the meal plan, you can further optimize your nutrition for success. Remember, a balanced diet is just one aspect of a successful weight loss journey - stay committed, and you'll be on track to reaching your target in no time."
+}

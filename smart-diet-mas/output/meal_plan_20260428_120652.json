@@ -1,0 +1,244 @@
+{
+  "user_profile": {
+    "name": "Kasun Perera",
+    "age": 28,
+    "gender": "male",
+    "weight_kg": 78.0,
+    "height_cm": 175.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 25.5,
+    "category": "overweight",
+    "interpretation": "BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.",
+    "weight_kg": 78.0,
+    "height_cm": 175.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Sweet Potato (baked)",
+            "food_id": "sweet_potato",
+            "quantity": "1 medium (150g)",
+            "calories": 135.0,
+            "protein_g": 3.0,
+            "carbs_g": 31.0,
+            "fat_g": 0.2,
+            "fiber_g": 5.0
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 397.0,
+        "total_protein_g": 16.9,
+        "total_carbs_g": 59.6,
+        "total_fat_g": 11.2,
+        "total_fiber_g": 8.1
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "String Hoppers (Idiyappam)",
+            "food_id": "string_hoppers",
+            "quantity": "5 pieces (150g)",
+            "calories": 180.0,
+            "protein_g": 3.5,
+            "carbs_g": 38.0,
+            "fat_g": 0.8,
+            "fiber_g": 1.2
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 490.0,
+        "total_protein_g": 19.0,
+        "total_carbs_g": 74.0,
+        "total_fat_g": 13.8,
+        "total_fiber_g": 14.2
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "Kottu Roti (Vegetable)",
+            "food_id": "kottu_roti",
+            "quantity": "1 plate (300g)",
+            "calories": 420.0,
+            "protein_g": 12.0,
+            "carbs_g": 52.0,
+            "fat_g": 18.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "~50% of 2 tbsp (30g)",
+            "calories": 42.5,
+            "protein_g": 0.5,
+            "carbs_g": 1.5,
+            "fat_g": 4.0,
+            "fiber_g": 1.0
+          }
+        ],
+        "total_calories": 677.5,
+        "total_protein_g": 50.0,
+        "total_carbs_g": 58.5,
+        "total_fat_g": 27.0,
+        "total_fiber_g": 8.0
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Papaya",
+            "food_id": "papaya",
+            "quantity": "1 cup (145g)",
+            "calories": 62.0,
+            "protein_g": 0.7,
+            "carbs_g": 16.0,
+            "fat_g": 0.4,
+            "fiber_g": 2.5
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 217.0,
+        "total_protein_g": 13.3,
+        "total_carbs_g": 17.1,
+        "total_fat_g": 11.0,
+        "total_fiber_g": 2.5
+      }
+    ],
+    "total_daily_calories": 1781.5,
+    "total_protein_g": 99.2,
+    "total_carbs_g": 209.2,
+    "total_fat_g": 63.0,
+    "total_fiber_g": 32.8,
+    "target_calories": 2195.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "Increase protein intake to at least 110g per day to support muscle maintenance during weight loss.",
+      "Incorporate more fiber-rich foods like legumes, whole grains, and fruits to help with satiety and weight loss.",
+      "Consider adding healthy fats like nuts and seeds to the meal plan to increase calorie density without excessive fat intake.",
+      "Review lunch options to ensure at least 2-3 servings of vegetables are included daily."
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "Eat with your right hand, as the left hand is considered unclean.",
+      "Use a spoon to eat curry and rice together, as it's customary in Sri Lankan culture.",
+      "Respect the hierarchy of meals by eating the most spicy dishes first."
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 2195.0,
+    "actual_calories": 1781.5,
+    "calorie_deviation": -18.8,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 62.4,
+    "actual_protein": 99.2,
+    "macronutrient_breakdown": {
+      "protein_pct": 22.0,
+      "carbs_pct": 46.5,
+      "fat_pct": 31.5
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 18.8% below target",
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Kasun Perera's Meal Plan Analysis Report\n\nNutritional Adequacy:\nThe meal plan falls short of its daily calorie goal, resulting in an underconsumption of 413.5 calories (18.8% below target). This deviation may not be sufficient to support weight loss efforts.\n\nMeets Goal: No\nThe plan does not meet Kasun's weight loss goal, and further adjustments are necessary to achieve this objective.\n\nKey Strengths:\nWhile the meal plan is relatively balanced in terms of macronutrient distribution, it lacks variety, which could lead to nutrient deficiencies over time.\n\nRecommendations:\n\n1. Increase portions or add snacks to meet the calorie target and prevent excessive underconsumption.\n2. Incorporate more protein-rich foods into the diet to better meet macro targets, specifically focusing on increasing protein intake to 62g as recommended.\n3. Consider consulting a registered dietitian or nutritionist for personalized guidance on meal planning and nutrient balance.\n\nMotivational Closing Note:\nKasun, every small step towards a healthier lifestyle counts! With a few adjustments to your meal plan, you can set yourself up for success in achieving your weight loss goals. Remember that progress is not always linear, but with persistence and patience, you will reach your target."
+}

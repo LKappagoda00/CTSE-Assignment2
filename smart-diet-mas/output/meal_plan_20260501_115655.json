@@ -1,0 +1,219 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 50.0,
+    "height_cm": 170.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 17.3,
+    "category": "underweight",
+    "interpretation": "BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.",
+    "weight_kg": 50.0,
+    "height_cm": 170.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Sweet Potato (baked)",
+            "food_id": "sweet_potato",
+            "quantity": "1 medium (150g)",
+            "calories": 135.0,
+            "protein_g": 3.0,
+            "carbs_g": 31.0,
+            "fat_g": 0.2,
+            "fiber_g": 5.0
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 397.0,
+        "total_protein_g": 16.9,
+        "total_carbs_g": 59.6,
+        "total_fat_g": 11.2,
+        "total_fiber_g": 8.1
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "Sweet Potato (baked)",
+            "food_id": "sweet_potato",
+            "quantity": "1 medium (150g)",
+            "calories": 135.0,
+            "protein_g": 3.0,
+            "carbs_g": 31.0,
+            "fat_g": 0.2,
+            "fiber_g": 5.0
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Vegetable Curry (Coconut Milk)",
+            "food_id": "coconut_milk_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 160.0,
+            "protein_g": 4.0,
+            "carbs_g": 12.0,
+            "fat_g": 11.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 550.0,
+        "total_protein_g": 43.0,
+        "total_carbs_g": 46.0,
+        "total_fat_g": 22.2,
+        "total_fiber_g": 11.0
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "Wheat Roti",
+            "food_id": "roti_wheat",
+            "quantity": "2 pieces (120g)",
+            "calories": 220.0,
+            "protein_g": 7.0,
+            "carbs_g": 36.0,
+            "fat_g": 5.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          }
+        ],
+        "total_calories": 445.0,
+        "total_protein_g": 21.5,
+        "total_carbs_g": 69.0,
+        "total_fat_g": 10.0,
+        "total_fiber_g": 15.0
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Papaya",
+            "food_id": "papaya",
+            "quantity": "1 cup (145g)",
+            "calories": 62.0,
+            "protein_g": 0.7,
+            "carbs_g": 16.0,
+            "fat_g": 0.4,
+            "fiber_g": 2.5
+          }
+        ],
+        "total_calories": 62.0,
+        "total_protein_g": 0.7,
+        "total_carbs_g": 16.0,
+        "total_fat_g": 0.4,
+        "total_fiber_g": 2.5
+      }
+    ],
+    "total_daily_calories": 1454.0,
+    "total_protein_g": 82.1,
+    "total_carbs_g": 190.6,
+    "total_fat_g": 43.8,
+    "total_fiber_g": 36.6,
+    "target_calories": 1729.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "{\"suggestions\": [\"Increase calorie intake by 275kcal to meet the target of 1729kcal/day.\nAdd more protein sources (e.g., lean meats, fish, eggs) to reach the daily goal of 82.1g.\nIncorporate high-fibe"
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "{\"tips\": [\"Eat with your right hand, as using the left hand is considered impolite.\", \"Use a spoon to eat rice and curry, as it's customary to hold the bowl with your left hand.\", \"Respect for elders:"
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 1729.0,
+    "actual_calories": 1454.0,
+    "calorie_deviation": -15.9,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 40.0,
+    "actual_protein": 82.1,
+    "macronutrient_breakdown": {
+      "protein_pct": 22.1,
+      "carbs_pct": 51.3,
+      "fat_pct": 26.5
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 15.9% below target",
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Lahiru Kappagoda,\n\nThis nutrition analysis reveals that your current meal plan falls short of meeting your weight loss goal, with an actual daily calorie intake of 1454 kcal, resulting in a deviation of -15.9% from the target of 1729.0 kcal.\n\nThe plan's macronutrient composition is not ideal, as it exceeds the recommended protein content by 42g and falls short of the carbohydrate and fat targets. Specifically, the percentage of carbohydrates (51.3%) is higher than the desired range, while protein (22.1%) and fat (26.5%) are below their respective goals.\n\nTo improve this meal plan, we recommend increasing portions or adding snacks to bridge the calorie gap and meet the daily target. Additionally, incorporating more protein-rich foods into your diet will help better balance macronutrient ratios and support weight loss efforts.\n\nBy making these adjustments, you can enhance the overall nutritional adequacy of your meal plan and increase its effectiveness in supporting your weight loss goals.\n\nRemember, every small step counts, and with a few tweaks to your current plan, you'll be on track to achieving a healthier, more balanced lifestyle."
+}

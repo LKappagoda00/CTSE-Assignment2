@@ -1,0 +1,244 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 78.0,
+    "height_cm": 175.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 25.5,
+    "category": "overweight",
+    "interpretation": "BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.",
+    "weight_kg": 78.0,
+    "height_cm": 175.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Wheat Roti",
+            "food_id": "roti_wheat",
+            "quantity": "2 pieces (120g)",
+            "calories": 220.0,
+            "protein_g": 7.0,
+            "carbs_g": 36.0,
+            "fat_g": 5.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Sri Lankan Fish Curry",
+            "food_id": "fish_curry_sl",
+            "quantity": "1 cup (200g)",
+            "calories": 250.0,
+            "protein_g": 30.0,
+            "carbs_g": 6.0,
+            "fat_g": 12.0,
+            "fiber_g": 1.5
+          },
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "~78% of 1 medium (120g)",
+            "calories": 82.8,
+            "protein_g": 1.0,
+            "carbs_g": 21.3,
+            "fat_g": 0.3,
+            "fiber_g": 2.4
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 554.8,
+        "total_protein_g": 38.0,
+        "total_carbs_g": 63.8,
+        "total_fat_g": 17.3,
+        "total_fiber_g": 7.9
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "Sweet Potato (baked)",
+            "food_id": "sweet_potato",
+            "quantity": "1 medium (150g)",
+            "calories": 135.0,
+            "protein_g": 3.0,
+            "carbs_g": 31.0,
+            "fat_g": 0.2,
+            "fiber_g": 5.0
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Vegetable Curry (Coconut Milk)",
+            "food_id": "coconut_milk_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 160.0,
+            "protein_g": 4.0,
+            "carbs_g": 12.0,
+            "fat_g": 11.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 560.0,
+        "total_protein_g": 20.0,
+        "total_carbs_g": 74.0,
+        "total_fat_g": 22.2,
+        "total_fiber_g": 19.0
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "White Rice (cooked)",
+            "food_id": "rice_white",
+            "quantity": "1 cup (200g)",
+            "calories": 206.0,
+            "protein_g": 4.3,
+            "carbs_g": 44.5,
+            "fat_g": 0.4,
+            "fiber_g": 0.6
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Mallung (Leafy Green Stir-fry)",
+            "food_id": "mallung",
+            "quantity": "1 cup (100g)",
+            "calories": 60.0,
+            "protein_g": 3.0,
+            "carbs_g": 6.0,
+            "fat_g": 3.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 521.0,
+        "total_protein_g": 43.3,
+        "total_carbs_g": 53.5,
+        "total_fat_g": 14.4,
+        "total_fiber_g": 6.6
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Papaya",
+            "food_id": "papaya",
+            "quantity": "1 cup (145g)",
+            "calories": 62.0,
+            "protein_g": 0.7,
+            "carbs_g": 16.0,
+            "fat_g": 0.4,
+            "fiber_g": 2.5
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "~88% of 1 cup (200g)",
+            "calories": 159.1,
+            "protein_g": 10.6,
+            "carbs_g": 24.7,
+            "fat_g": 2.7,
+            "fiber_g": 7.1
+          }
+        ],
+        "total_calories": 221.1,
+        "total_protein_g": 11.3,
+        "total_carbs_g": 40.7,
+        "total_fat_g": 3.1,
+        "total_fiber_g": 9.6
+      }
+    ],
+    "total_daily_calories": 1856.9,
+    "total_protein_g": 112.6,
+    "total_carbs_g": 232.0,
+    "total_fat_g": 57.0,
+    "total_fiber_g": 43.1,
+    "target_calories": 2211.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "Increase protein intake to at least 1.2g/kg body weight (96g) for muscle maintenance during weight loss",
+      "Add more fiber-rich foods like fruits, vegetables, and whole grains to help with satiety and weight loss",
+      "Incorporate high-intensity interval training (HIIT) workouts 3-4 times a week to boost metabolism and burn calories",
+      "Consider replacing one or two high-calorie meals with lower-calorie alternatives, such as salads or soups, to reduce overall calorie intake"
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "Eat with your right hand, as using the left hand is considered impolite.",
+      "Use a spoon to eat rice and curry, as it's customary to hold the bowl with your left hand.",
+      "It's common for Sri Lankans to share food from a central plate, so be prepared to receive or offer food to others."
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 2211.0,
+    "actual_calories": 1856.9,
+    "calorie_deviation": -16.0,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 62.4,
+    "actual_protein": 112.6,
+    "macronutrient_breakdown": {
+      "protein_pct": 23.8,
+      "carbs_pct": 49.1,
+      "fat_pct": 27.1
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 16.0% below target",
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Nutrition Report Summary for Lahiru Kappagoda's Weight Loss Meal Plan\n\nOverview:\nLahiru's current meal plan has shown significant calorie reduction, with an actual caloric intake of 1856.9 kcal, resulting in a deviation of -16.0% from the target of 2211.0 kcal. This reduction is a positive step towards weight loss, but it falls short of meeting the stated goal.\n\nNutritional Adequacy:\nThe plan's macronutrient composition, with protein at 23.8%, carbohydrates at 49.1%, and fat at 27.1%, falls below the recommended targets. Specifically, the protein content is 16.2g lower than the required amount of 62g.\n\nKey Strengths:\nThe meal plan demonstrates a good balance between calorie reduction and macronutrient distribution, indicating that Lahiru has made progress in managing their diet.\n\nRecommendations for Improvement:\n\n1. Increase portions or add snacks to meet the daily caloric target, ensuring adequate energy intake while maintaining weight loss goals.\n2. Incorporate more protein-rich foods into the meal plan to better align with macro targets and support muscle mass maintenance during weight loss.\n3. Consider consulting a registered dietitian or nutritionist for personalized guidance on achieving optimal nutritional balance.\n\nClosing Note:\nLahiru's commitment to their weight loss journey is commendable, and this report highlights areas of progress and opportunities for improvement. By making targeted adjustments to the meal plan, Lahiru can enhance their chances of success and achieve a healthier relationship with food."
+}

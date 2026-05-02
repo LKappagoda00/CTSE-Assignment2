@@ -1,0 +1,76 @@
+============================================================
+  SMART DIET & NUTRITION — PERSONALIZED MEAL PLAN
+============================================================
+  Generated: 2026-05-01 11:56
+
+────────────────────────────────────────────────────────────
+  USER PROFILE
+────────────────────────────────────────────────────────────
+  Name.......................... lahiru kappagoda
+  Age........................... 26
+  Gender........................ male
+  Weight Kg..................... 50.0
+  Height Cm..................... 170.0
+  Activity Level................ moderately_active
+  Dietary Goal.................. weight_loss
+  Allergies..................... []
+  Cultural Preference........... sri_lankan
+
+────────────────────────────────────────────────────────────
+  BMI ANALYSIS
+────────────────────────────────────────────────────────────
+  BMI Value: 17.3
+  Category:  underweight
+  Note:      BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.
+
+────────────────────────────────────────────────────────────
+  DAILY MEAL PLAN (Day 1)
+  Culture: sri_lankan
+  Target: 1729.0 kcal
+────────────────────────────────────────────────────────────
+
+  ◆ BREAKFAST (397.0 kcal)
+  ········································
+    • Sweet Potato (baked)           1 medium (150g)      135.0 kcal | P:3.0g C:31.0g F:0.2g
+    • Boiled Eggs                    2 large (100g)       155.0 kcal | P:12.6g C:1.1g F:10.6g
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Plain Tea                      1 cup (240ml)        2.0 kcal | P:0.0g C:0.5g F:0.0g
+
+  ◆ LUNCH (550.0 kcal)
+  ········································
+    • Sweet Potato (baked)           1 medium (150g)      135.0 kcal | P:3.0g C:31.0g F:0.2g
+    • Grilled White Fish             150g                 170.0 kcal | P:35.0g C:0.0g F:3.0g
+    • Vegetable Curry (Coconut Milk) 1 cup (200g)         160.0 kcal | P:4.0g C:12.0g F:11.0g
+    • Coconut Sambol (Pol Sambol)    2 tbsp (30g)         85.0 kcal | P:1.0g C:3.0g F:8.0g
+
+  ◆ DINNER (445.0 kcal)
+  ········································
+    • Wheat Roti                     2 pieces (120g)      220.0 kcal | P:7.0g C:36.0g F:5.0g
+    • Dhal Curry (Red Lentils)       1 cup (200g)         180.0 kcal | P:12.0g C:28.0g F:3.0g
+    • Gotukola Sambol (Pennywort Salad) 1 cup (100g)         45.0 kcal | P:2.5g C:5.0g F:2.0g
+
+  ◆ SNACK (62.0 kcal)
+  ········································
+    • Papaya                         1 cup (145g)         62.0 kcal | P:0.7g C:16.0g F:0.4g
+
+  ── DAILY TOTALS ──
+  Calories:  1454.0 kcal
+  Protein:   82.1 g
+  Carbs:     190.6 g
+  Fat:       43.8 g
+
+────────────────────────────────────────────────────────────
+  CALORIE ANALYSIS
+────────────────────────────────────────────────────────────
+  Target:    1729.0 kcal
+  Actual:    1454.0 kcal
+  Deviation: -15.9%
+  Meets Goal: ✗ No
+
+  Recommendations:
+    → Increase portions or add snacks — plan is 15.9% below target
+    → Add more protein-rich foods to better meet macro targets
+
+============================================================
+  End of Report
+============================================================

@@ -1,0 +1,109 @@
+2026-04-28 12:04:00 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:00 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'western': 23 items
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1728.0 kcal (target: 2000)
+2026-04-28 12:04:00 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:00 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'western': 23 items
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1760.0 kcal (target: 2000)
+2026-04-28 12:04:00 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:00 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'western': 23 items
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1775.0 kcal (target: 2000)
+2026-04-28 12:04:00 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:00 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'sri_lankan': 24 items
+2026-04-28 12:04:00 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1787.0 kcal (target: 2000)
+2026-04-28 12:04:00 | INFO     | observability:log_agent_start:63 | ▶ AGENT START: UserProfileAgent
+2026-04-28 12:04:00 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_bmi
+2026-04-28 12:04:00 | INFO     | tools.bmi_calculator:calculate_bmi:110 | BMI calculated: 22.9 (normal) for 70.0kg / 175.0cm
+2026-04-28 12:04:00 | INFO     | tools.bmi_calculator:calculate_bmr:149 | BMR calculated: 1674 kcal/day for male, age 25
+2026-04-28 12:04:00 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_bmr
+2026-04-28 12:04:00 | INFO     | tools.bmi_calculator:calculate_tdee:175 | TDEE calculated: 2595 kcal/day (activity: moderately_active, multiplier: 1.55)
+2026-04-28 12:04:00 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_tdee
+2026-04-28 12:04:00 | INFO     | tools.bmi_calculator:calculate_target_calories:205 | Target calories: 2095 kcal/day (goal: weight_loss, TDEE: 2595)
+2026-04-28 12:04:00 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_target_calories
+2026-04-28 12:04:00 | INFO     | observability:log_agent_end:75 | ✔ AGENT END: UserProfileAgent
+2026-04-28 12:04:00 | INFO     | agents.user_profile_agent:user_profile_node:171 | UserProfileAgent complete: Test, target 2095.0 kcal
+2026-04-28 12:04:00 | INFO     | tools.bmi_calculator:calculate_bmi:110 | BMI calculated: 25.5 (overweight) for 78kg / 175cm
+2026-04-28 12:04:38 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:38 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'western': 23 items
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1521.5 kcal (target: 2000)
+2026-04-28 12:04:38 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:38 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'western': 23 items
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1621.0 kcal (target: 2000)
+2026-04-28 12:04:38 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:38 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'western': 23 items
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1619.0 kcal (target: 2000)
+2026-04-28 12:04:38 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:38 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'sri_lankan': 24 items
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1349.0 kcal (target: 2000)
+2026-04-28 12:04:38 | INFO     | observability:log_agent_start:63 | ▶ AGENT START: UserProfileAgent
+2026-04-28 12:04:38 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_bmi
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_bmi:110 | BMI calculated: 22.9 (normal) for 70.0kg / 175.0cm
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_bmr:149 | BMR calculated: 1674 kcal/day for male, age 25
+2026-04-28 12:04:38 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_bmr
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_tdee:175 | TDEE calculated: 2595 kcal/day (activity: moderately_active, multiplier: 1.55)
+2026-04-28 12:04:38 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_tdee
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_target_calories:205 | Target calories: 2095 kcal/day (goal: weight_loss, TDEE: 2595)
+2026-04-28 12:04:38 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_target_calories
+2026-04-28 12:04:38 | INFO     | observability:log_agent_end:75 | ✔ AGENT END: UserProfileAgent
+2026-04-28 12:04:38 | INFO     | agents.user_profile_agent:user_profile_node:171 | UserProfileAgent complete: Test, target 2095.0 kcal
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_bmi:110 | BMI calculated: 22.9 (normal) for 70kg / 175cm
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_bmr:149 | BMR calculated: 1659 kcal/day for male, age 28
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_tdee:175 | TDEE calculated: 2571 kcal/day (activity: moderately_active, multiplier: 1.55)
+2026-04-28 12:04:38 | INFO     | tools.bmi_calculator:calculate_target_calories:205 | Target calories: 2071 kcal/day (goal: weight_loss, TDEE: 2571)
+2026-04-28 12:04:38 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:04:38 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'sri_lankan': 24 items
+2026-04-28 12:04:38 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1866.3 kcal (target: 2071.0)
+2026-04-28 12:04:38 | INFO     | tools.file_export:__init__:23 | FileExportTool initialized: C:\Users\Lahiru\AppData\Local\Temp\tmpw1c2rmwp
+2026-04-28 12:04:38 | INFO     | tools.file_export:export_json:45 | JSON exported: C:\Users\Lahiru\AppData\Local\Temp\tmpw1c2rmwp\meal_plan_20260428_120438.json
+2026-04-28 12:05:35 | INFO     | orchestration.workflow:run_workflow:93 | ============================================================
+2026-04-28 12:05:35 | INFO     | orchestration.workflow:run_workflow:94 | Starting Smart Diet MAS Workflow
+2026-04-28 12:05:35 | INFO     | orchestration.workflow:run_workflow:95 | ============================================================
+2026-04-28 12:05:35 | INFO     | orchestration.workflow:build_workflow:50 | Building LangGraph workflow...
+2026-04-28 12:05:35 | INFO     | orchestration.workflow:build_workflow:70 | LangGraph workflow compiled successfully
+2026-04-28 12:05:35 | INFO     | observability:log_agent_start:63 | ▶ AGENT START: UserProfileAgent
+2026-04-28 12:05:35 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_bmi
+2026-04-28 12:05:35 | INFO     | tools.bmi_calculator:calculate_bmi:110 | BMI calculated: 25.5 (overweight) for 78.0kg / 175.0cm
+2026-04-28 12:05:35 | INFO     | tools.bmi_calculator:calculate_bmr:149 | BMR calculated: 1739 kcal/day for male, age 28
+2026-04-28 12:05:35 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_bmr
+2026-04-28 12:05:35 | INFO     | tools.bmi_calculator:calculate_tdee:175 | TDEE calculated: 2695 kcal/day (activity: moderately_active, multiplier: 1.55)
+2026-04-28 12:05:35 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_tdee
+2026-04-28 12:05:35 | INFO     | tools.bmi_calculator:calculate_target_calories:205 | Target calories: 2195 kcal/day (goal: weight_loss, TDEE: 2695)
+2026-04-28 12:05:35 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: calculate_target_calories
+2026-04-28 12:05:35 | INFO     | observability:log_agent_end:75 | ✔ AGENT END: UserProfileAgent
+2026-04-28 12:05:35 | INFO     | agents.user_profile_agent:user_profile_node:171 | UserProfileAgent complete: Kasun Perera, target 2195.0 kcal
+2026-04-28 12:05:35 | INFO     | observability:log_agent_start:63 | ▶ AGENT START: NutritionPlannerAgent
+2026-04-28 12:05:35 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:05:35 | INFO     | tools.meal_plan_generator:__init__:24 | MealPlanGeneratorTool initialized
+2026-04-28 12:05:35 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: MealPlanGeneratorTool.generate_daily_plan
+2026-04-28 12:05:35 | INFO     | tools.food_database:get_foods_by_culture:137 | Culture 'sri_lankan': 24 items
+2026-04-28 12:05:35 | INFO     | tools.meal_plan_generator:generate_daily_plan:71 | Day 1: 1781.5 kcal (target: 2195.0)
+2026-04-28 12:05:36 | DEBUG    | observability:log_llm_call:101 | 🤖 LLM call by NutritionPlannerAgent
+2026-04-28 12:06:15 | DEBUG    | observability:log_llm_call:101 | 🤖 LLM call by NutritionPlannerAgent
+2026-04-28 12:06:15 | INFO     | agents.nutrition_planner_agent:nutrition_planner_node:119 | LLM provided 4 suggestions
+2026-04-28 12:06:15 | INFO     | observability:log_agent_end:75 | ✔ AGENT END: NutritionPlannerAgent
+2026-04-28 12:06:15 | INFO     | observability:log_agent_start:63 | ▶ AGENT START: CulturalAdapterAgent
+2026-04-28 12:06:15 | INFO     | tools.food_database:__init__:61 | Food database loaded: 50 items from C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\data\food_database.json
+2026-04-28 12:06:15 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: FoodDatabaseTool.get_cultural_substitutions
+2026-04-28 12:06:16 | DEBUG    | observability:log_llm_call:101 | 🤖 LLM call by CulturalAdapterAgent
+2026-04-28 12:06:25 | DEBUG    | observability:log_llm_call:101 | 🤖 LLM call by CulturalAdapterAgent
+2026-04-28 12:06:25 | INFO     | observability:log_agent_end:75 | ✔ AGENT END: CulturalAdapterAgent
+2026-04-28 12:06:25 | INFO     | observability:log_agent_start:63 | ▶ AGENT START: CalorieAnalyzerAgent
+2026-04-28 12:06:25 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: CalorieAnalysis
+2026-04-28 12:06:25 | DEBUG    | observability:log_llm_call:101 | 🤖 LLM call by CalorieAnalyzerAgent
+2026-04-28 12:06:52 | DEBUG    | observability:log_llm_call:101 | 🤖 LLM call by CalorieAnalyzerAgent
+2026-04-28 12:06:52 | INFO     | tools.file_export:__init__:23 | FileExportTool initialized: C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\output
+2026-04-28 12:06:52 | INFO     | observability:log_tool_usage:88 | 🔧 TOOL: FileExportTool.export_final_report
+2026-04-28 12:06:52 | INFO     | tools.file_export:export_json:45 | JSON exported: C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\output\meal_plan_20260428_120652.json
+2026-04-28 12:06:52 | INFO     | tools.file_export:export_text:70 | Text exported: C:\Users\Lahiru\Desktop\CTSE assignment 2\smart-diet-mas\output\meal_plan_20260428_120652.txt
+2026-04-28 12:06:52 | INFO     | observability:log_agent_end:75 | ✔ AGENT END: CalorieAnalyzerAgent
+2026-04-28 12:06:52 | INFO     | orchestration.workflow:run_workflow:117 | ============================================================
+2026-04-28 12:06:52 | INFO     | orchestration.workflow:run_workflow:118 | Workflow Complete!
+2026-04-28 12:06:52 | INFO     | orchestration.workflow:run_workflow:119 | ============================================================

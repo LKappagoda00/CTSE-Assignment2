@@ -1,0 +1,78 @@
+============================================================
+  SMART DIET & NUTRITION — PERSONALIZED MEAL PLAN
+============================================================
+  Generated: 2026-04-28 12:06
+
+────────────────────────────────────────────────────────────
+  USER PROFILE
+────────────────────────────────────────────────────────────
+  Name.......................... Kasun Perera
+  Age........................... 28
+  Gender........................ male
+  Weight Kg..................... 78.0
+  Height Cm..................... 175.0
+  Activity Level................ moderately_active
+  Dietary Goal.................. weight_loss
+  Allergies..................... []
+  Cultural Preference........... sri_lankan
+
+────────────────────────────────────────────────────────────
+  BMI ANALYSIS
+────────────────────────────────────────────────────────────
+  BMI Value: 25.5
+  Category:  overweight
+  Note:      BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.
+
+────────────────────────────────────────────────────────────
+  DAILY MEAL PLAN (Day 1)
+  Culture: sri_lankan
+  Target: 2195.0 kcal
+────────────────────────────────────────────────────────────
+
+  ◆ BREAKFAST (397.0 kcal)
+  ········································
+    • Sweet Potato (baked)           1 medium (150g)      135.0 kcal | P:3.0g C:31.0g F:0.2g
+    • Boiled Eggs                    2 large (100g)       155.0 kcal | P:12.6g C:1.1g F:10.6g
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Plain Tea                      1 cup (240ml)        2.0 kcal | P:0.0g C:0.5g F:0.0g
+
+  ◆ LUNCH (490.0 kcal)
+  ········································
+    • String Hoppers (Idiyappam)     5 pieces (150g)      180.0 kcal | P:3.5g C:38.0g F:0.8g
+    • Dhal Curry (Red Lentils)       1 cup (200g)         180.0 kcal | P:12.0g C:28.0g F:3.0g
+    • Gotukola Sambol (Pennywort Salad) 1 cup (100g)         45.0 kcal | P:2.5g C:5.0g F:2.0g
+    • Coconut Sambol (Pol Sambol)    2 tbsp (30g)         85.0 kcal | P:1.0g C:3.0g F:8.0g
+
+  ◆ DINNER (677.5 kcal)
+  ········································
+    • Kottu Roti (Vegetable)         1 plate (300g)       420.0 kcal | P:12.0g C:52.0g F:18.0g
+    • Grilled White Fish             150g                 170.0 kcal | P:35.0g C:0.0g F:3.0g
+    • Gotukola Sambol (Pennywort Salad) 1 cup (100g)         45.0 kcal | P:2.5g C:5.0g F:2.0g
+    • Coconut Sambol (Pol Sambol)    ~50% of 2 tbsp (30g) 42.5 kcal | P:0.5g C:1.5g F:4.0g
+
+  ◆ SNACK (217.0 kcal)
+  ········································
+    • Papaya                         1 cup (145g)         62.0 kcal | P:0.7g C:16.0g F:0.4g
+    • Boiled Eggs                    2 large (100g)       155.0 kcal | P:12.6g C:1.1g F:10.6g
+
+  ── DAILY TOTALS ──
+  Calories:  1781.5 kcal
+  Protein:   99.2 g
+  Carbs:     209.2 g
+  Fat:       63.0 g
+
+────────────────────────────────────────────────────────────
+  CALORIE ANALYSIS
+────────────────────────────────────────────────────────────
+  Target:    2195.0 kcal
+  Actual:    1781.5 kcal
+  Deviation: -18.8%
+  Meets Goal: ✗ No
+
+  Recommendations:
+    → Increase portions or add snacks — plan is 18.8% below target
+    → Add more protein-rich foods to better meet macro targets
+
+============================================================
+  End of Report
+============================================================

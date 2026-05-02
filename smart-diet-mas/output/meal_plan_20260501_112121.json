@@ -1,0 +1,221 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 78.0,
+    "height_cm": 175.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 25.5,
+    "category": "overweight",
+    "interpretation": "BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.",
+    "weight_kg": 78.0,
+    "height_cm": 175.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Idli (Steamed Rice Cake)",
+            "food_id": "idli",
+            "quantity": "3 pieces (150g)",
+            "calories": 175.0,
+            "protein_g": 4.0,
+            "carbs_g": 36.0,
+            "fat_g": 0.5,
+            "fiber_g": 1.0
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Papaya",
+            "food_id": "papaya",
+            "quantity": "1 cup (145g)",
+            "calories": 62.0,
+            "protein_g": 0.7,
+            "carbs_g": 16.0,
+            "fat_g": 0.4,
+            "fiber_g": 2.5
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 409.0,
+        "total_protein_g": 39.7,
+        "total_carbs_g": 52.5,
+        "total_fat_g": 3.9,
+        "total_fiber_g": 3.5
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "Hoppers (Appam)",
+            "food_id": "hoppers",
+            "quantity": "2 pieces (120g)",
+            "calories": 210.0,
+            "protein_g": 3.8,
+            "carbs_g": 40.0,
+            "fat_g": 3.5,
+            "fiber_g": 0.8
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Vegetable Curry (Coconut Milk)",
+            "food_id": "coconut_milk_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 160.0,
+            "protein_g": 4.0,
+            "carbs_g": 12.0,
+            "fat_g": 11.0,
+            "fiber_g": 4.0
+          }
+        ],
+        "total_calories": 550.0,
+        "total_protein_g": 19.8,
+        "total_carbs_g": 80.0,
+        "total_fat_g": 17.5,
+        "total_fiber_g": 12.8
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "String Hoppers (Idiyappam)",
+            "food_id": "string_hoppers",
+            "quantity": "5 pieces (150g)",
+            "calories": 180.0,
+            "protein_g": 3.5,
+            "carbs_g": 38.0,
+            "fat_g": 0.8,
+            "fiber_g": 1.2
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          }
+        ],
+        "total_calories": 405.0,
+        "total_protein_g": 18.0,
+        "total_carbs_g": 71.0,
+        "total_fat_g": 5.8,
+        "total_fiber_g": 12.2
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "~74% of 2 large (100g)",
+            "calories": 116.1,
+            "protein_g": 9.4,
+            "carbs_g": 0.8,
+            "fat_g": 7.9,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 221.1,
+        "total_protein_g": 10.7,
+        "total_carbs_g": 27.8,
+        "total_fat_g": 8.3,
+        "total_fiber_g": 3.1
+      }
+    ],
+    "total_daily_calories": 1585.1,
+    "total_protein_g": 88.2,
+    "total_carbs_g": 231.3,
+    "total_fat_g": 35.5,
+    "total_fiber_g": 31.6,
+    "target_calories": 2211.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "{\"suggestions\": [\"Increase protein intake by 10-15g to ensure 0.8g/kg body weight (64g) for muscle maintenance during weight loss. Consider adding lean protein sources like poultry, fish, or legumes.\""
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "Eat with your right hand, as using the left hand is considered impolite.",
+      "Use a spoon to eat rice and curry, as it's customary to hold the bowl in your left hand.",
+      "It's common for Sri Lankans to share food and meals with family and friends, especially during special occasions."
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 2211.0,
+    "actual_calories": 1585.1,
+    "calorie_deviation": -28.3,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 62.4,
+    "actual_protein": 88.2,
+    "macronutrient_breakdown": {
+      "protein_pct": 22.1,
+      "carbs_pct": 57.9,
+      "fat_pct": 20.0
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 28.3% below target",
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Lahiru Kappagoda,\n\nThis comprehensive analysis of your meal plan reveals that, unfortunately, it falls short of meeting your weight loss goals. The actual calorie intake is 1585.1 kcal, which deviates by -28.3% from the targeted 2211.0 kcal, indicating a significant caloric deficit.\n\nWhile the current protein content of 88.2g exceeds the required amount of 62g, the macronutrient distribution is not optimal. The plan's carbohydrate and fat percentages are relatively high at 57.9% and 20.0%, respectively, which may hinder overall satiety and nutrient adequacy.\n\nKey strengths of your meal plan include its adherence to a Sri Lankan culture-based approach, ensuring that you're consuming foods familiar and enjoyable to you. Additionally, the focus on protein-rich foods is commendable, as it can support muscle mass and satisfaction during weight loss.\n\nTo improve this plan, we recommend increasing portion sizes or adding snacks to boost calorie intake and meet your daily target. Furthermore, incorporating more protein-rich foods into your diet will help better align with your macro targets. By implementing these adjustments, you'll be well on your way to achieving a healthier and more balanced eating pattern that supports your weight loss goals.\n\nRemember, every small step towards a healthier lifestyle counts. Stay committed, and don't hesitate to reach out if you have any questions or need further guidance."
+}

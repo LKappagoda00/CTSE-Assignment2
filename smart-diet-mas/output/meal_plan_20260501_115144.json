@@ -1,0 +1,222 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 50.0,
+    "height_cm": 170.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 17.3,
+    "category": "underweight",
+    "interpretation": "BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.",
+    "weight_kg": 50.0,
+    "height_cm": 170.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Wheat Roti",
+            "food_id": "roti_wheat",
+            "quantity": "2 pieces (120g)",
+            "calories": 220.0,
+            "protein_g": 7.0,
+            "carbs_g": 36.0,
+            "fat_g": 5.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "~54% of 1 medium (120g)",
+            "calories": 57.2,
+            "protein_g": 0.7,
+            "carbs_g": 14.7,
+            "fat_g": 0.2,
+            "fiber_g": 1.7
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "~50% of 1 cup (240ml)",
+            "calories": 1.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.2,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 433.2,
+        "total_protein_g": 20.3,
+        "total_carbs_g": 52.0,
+        "total_fat_g": 15.8,
+        "total_fiber_g": 5.7
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "Sweet Potato (baked)",
+            "food_id": "sweet_potato",
+            "quantity": "1 medium (150g)",
+            "calories": 135.0,
+            "protein_g": 3.0,
+            "carbs_g": 31.0,
+            "fat_g": 0.2,
+            "fiber_g": 5.0
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Mallung (Leafy Green Stir-fry)",
+            "food_id": "mallung",
+            "quantity": "1 cup (100g)",
+            "calories": 60.0,
+            "protein_g": 3.0,
+            "carbs_g": 6.0,
+            "fat_g": 3.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Coconut Sambol (Pol Sambol)",
+            "food_id": "pol_sambol",
+            "quantity": "2 tbsp (30g)",
+            "calories": 85.0,
+            "protein_g": 1.0,
+            "carbs_g": 3.0,
+            "fat_g": 8.0,
+            "fiber_g": 2.0
+          }
+        ],
+        "total_calories": 435.0,
+        "total_protein_g": 19.6,
+        "total_carbs_g": 41.1,
+        "total_fat_g": 21.8,
+        "total_fiber_g": 11.0
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "White Rice (cooked)",
+            "food_id": "rice_white",
+            "quantity": "1 cup (200g)",
+            "calories": 206.0,
+            "protein_g": 4.3,
+            "carbs_g": 44.5,
+            "fat_g": 0.4,
+            "fiber_g": 0.6
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Mallung (Leafy Green Stir-fry)",
+            "food_id": "mallung",
+            "quantity": "1 cup (100g)",
+            "calories": 60.0,
+            "protein_g": 3.0,
+            "carbs_g": 6.0,
+            "fat_g": 3.0,
+            "fiber_g": 4.0
+          }
+        ],
+        "total_calories": 436.0,
+        "total_protein_g": 42.3,
+        "total_carbs_g": 50.5,
+        "total_fat_g": 6.4,
+        "total_fiber_g": 4.6
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Papaya",
+            "food_id": "papaya",
+            "quantity": "1 cup (145g)",
+            "calories": 62.0,
+            "protein_g": 0.7,
+            "carbs_g": 16.0,
+            "fat_g": 0.4,
+            "fiber_g": 2.5
+          }
+        ],
+        "total_calories": 62.0,
+        "total_protein_g": 0.7,
+        "total_carbs_g": 16.0,
+        "total_fat_g": 0.4,
+        "total_fiber_g": 2.5
+      }
+    ],
+    "total_daily_calories": 1366.2,
+    "total_protein_g": 82.9,
+    "total_carbs_g": 159.6,
+    "total_fat_g": 44.4,
+    "total_fiber_g": 23.8,
+    "target_calories": 1729.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "Increase protein intake to at least 1.0g/kg body weight (85g) for muscle maintenance during weight loss",
+      "Add more fiber-rich foods like fruits, vegetables, and whole grains to support satiety and weight loss",
+      "Incorporate healthy fats like nuts and seeds in meals to increase calorie density without adding extra carbs",
+      "Consider adding a source of protein at each meal to keep hunger satisfied between meals"
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "{\"tips\":[\"Use your right hand when eating Sri Lankan food, as the left hand is considered unclean.\",\"Eat with a spoon to enjoy the flavors of the curry and rice.\",\"Don't leave your utensils on the tab"
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 1729.0,
+    "actual_calories": 1366.2,
+    "calorie_deviation": -21.0,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 40.0,
+    "actual_protein": 82.9,
+    "macronutrient_breakdown": {
+      "protein_pct": 24.2,
+      "carbs_pct": 46.6,
+      "fat_pct": 29.2
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 21.0% below target",
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Lahiru Kappagoda,\n\nOur analysis of your meal plan reveals an initial deviation of -21.0% from the target calorie intake, resulting in an actual consumption of 1366.2 kcal compared to the goal of 1729.0 kcal.\n\nUnfortunately, this significant shortfall means that the plan does not meet its intended purpose for weight loss under these circumstances. Additionally, the protein content falls short of the required amount, with a deficit of approximately 42.1g (24.2% of total calories).\n\nDespite these challenges, there are opportunities for improvement within your existing meal plan. Increasing portion sizes or adding snacks could help bridge the calorie gap and provide a more balanced approach to achieving weight loss goals.\n\nTo further enhance the plan's effectiveness, incorporating more protein-rich foods can also aid in meeting macro targets. This may involve exploring alternative sources of protein such as lean meats, fish, eggs, dairy products, and plant-based options like legumes and nuts.\n\nIn conclusion, while there are areas for improvement, we encourage you to make adjustments to your meal plan with the goal of achieving a more balanced and calorie sufficient approach to weight loss."
+}

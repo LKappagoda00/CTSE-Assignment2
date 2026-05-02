@@ -1,0 +1,76 @@
+============================================================
+  SMART DIET & NUTRITION — PERSONALIZED MEAL PLAN
+============================================================
+  Generated: 2026-05-01 11:49
+
+────────────────────────────────────────────────────────────
+  USER PROFILE
+────────────────────────────────────────────────────────────
+  Name.......................... lahiru kappagoda
+  Age........................... 26
+  Gender........................ male
+  Weight Kg..................... 50.0
+  Height Cm..................... 170.0
+  Activity Level................ moderately_active
+  Dietary Goal.................. weight_loss
+  Allergies..................... []
+  Cultural Preference........... sri_lankan
+
+────────────────────────────────────────────────────────────
+  BMI ANALYSIS
+────────────────────────────────────────────────────────────
+  BMI Value: 17.3
+  Category:  underweight
+  Note:      BMI of 17.3 is classified as Underweight. Consider a calorie-surplus diet to reach a healthy weight.
+
+────────────────────────────────────────────────────────────
+  DAILY MEAL PLAN (Day 1)
+  Culture: sri_lankan
+  Target: 1729.0 kcal
+────────────────────────────────────────────────────────────
+
+  ◆ BREAKFAST (433.2 kcal)
+  ········································
+    • Dosa (plain)                   2 pieces (150g)      210.0 kcal | P:5.5g C:35.0g F:5.0g
+    • Dhal Curry (Red Lentils)       1 cup (200g)         180.0 kcal | P:12.0g C:28.0g F:3.0g
+    • Papaya                         ~68% of 1 cup (145g) 42.2 kcal | P:0.5g C:10.9g F:0.3g
+    • Plain Tea                      ~50% of 1 cup (240ml) 1.0 kcal | P:0.0g C:0.2g F:0.0g
+
+  ◆ LUNCH (500.0 kcal)
+  ········································
+    • Idli (Steamed Rice Cake)       3 pieces (150g)      175.0 kcal | P:4.0g C:36.0g F:0.5g
+    • Dhal Curry (Red Lentils)       1 cup (200g)         180.0 kcal | P:12.0g C:28.0g F:3.0g
+    • Mallung (Leafy Green Stir-fry) 1 cup (100g)         60.0 kcal | P:3.0g C:6.0g F:3.0g
+    • Coconut Sambol (Pol Sambol)    2 tbsp (30g)         85.0 kcal | P:1.0g C:3.0g F:8.0g
+
+  ◆ DINNER (525.0 kcal)
+  ········································
+    • Hoppers (Appam)                2 pieces (120g)      210.0 kcal | P:3.8g C:40.0g F:3.5g
+    • Sri Lankan Chicken Curry       1 cup (200g)         285.0 kcal | P:28.0g C:8.0g F:16.0g
+    • Mallung (Leafy Green Stir-fry) ~50% of 1 cup (100g) 30.0 kcal | P:1.5g C:3.0g F:1.5g
+
+  ◆ SNACK (182.5 kcal)
+  ········································
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Boiled Eggs                    ~50% of 2 large (100g) 77.5 kcal | P:6.3g C:0.6g F:5.3g
+
+  ── DAILY TOTALS ──
+  Calories:  1640.7 kcal
+  Protein:   78.9 g
+  Carbs:     225.7 g
+  Fat:       49.5 g
+
+────────────────────────────────────────────────────────────
+  CALORIE ANALYSIS
+────────────────────────────────────────────────────────────
+  Target:    1729.0 kcal
+  Actual:    1640.7 kcal
+  Deviation: -5.1%
+  Meets Goal: ✓ Yes
+
+  Recommendations:
+    → Add more protein-rich foods to better meet macro targets
+
+============================================================
+  End of Report
+============================================================

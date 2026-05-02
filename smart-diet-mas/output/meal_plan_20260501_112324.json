@@ -1,0 +1,224 @@
+{
+  "user_profile": {
+    "name": "lahiru kappagoda",
+    "age": 26,
+    "gender": "male",
+    "weight_kg": 78.0,
+    "height_cm": 175.0,
+    "activity_level": "moderately_active",
+    "dietary_goal": "weight_loss",
+    "allergies": [],
+    "cultural_preference": "sri_lankan"
+  },
+  "bmi_result": {
+    "bmi_value": 25.5,
+    "category": "overweight",
+    "interpretation": "BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.",
+    "weight_kg": 78.0,
+    "height_cm": 175.0
+  },
+  "adapted_meal_plan": {
+    "day": 1,
+    "meals": [
+      {
+        "meal_type": "breakfast",
+        "items": [
+          {
+            "food_name": "Idli (Steamed Rice Cake)",
+            "food_id": "idli",
+            "quantity": "3 pieces (150g)",
+            "calories": 175.0,
+            "protein_g": 4.0,
+            "carbs_g": 36.0,
+            "fat_g": 0.5,
+            "fiber_g": 1.0
+          },
+          {
+            "food_name": "Grilled White Fish",
+            "food_id": "grilled_fish",
+            "quantity": "150g",
+            "calories": 170.0,
+            "protein_g": 35.0,
+            "carbs_g": 0.0,
+            "fat_g": 3.0,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Papaya",
+            "food_id": "papaya",
+            "quantity": "1 cup (145g)",
+            "calories": 62.0,
+            "protein_g": 0.7,
+            "carbs_g": 16.0,
+            "fat_g": 0.4,
+            "fiber_g": 2.5
+          },
+          {
+            "food_name": "Plain Tea",
+            "food_id": "tea_plain",
+            "quantity": "1 cup (240ml)",
+            "calories": 2.0,
+            "protein_g": 0.0,
+            "carbs_g": 0.5,
+            "fat_g": 0.0,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 409.0,
+        "total_protein_g": 39.7,
+        "total_carbs_g": 52.5,
+        "total_fat_g": 3.9,
+        "total_fiber_g": 3.5
+      },
+      {
+        "meal_type": "lunch",
+        "items": [
+          {
+            "food_name": "Kottu Roti (Vegetable)",
+            "food_id": "kottu_roti",
+            "quantity": "1 plate (300g)",
+            "calories": 420.0,
+            "protein_g": 12.0,
+            "carbs_g": 52.0,
+            "fat_g": 18.0,
+            "fiber_g": 4.0
+          },
+          {
+            "food_name": "Dhal Curry (Red Lentils)",
+            "food_id": "dhal_curry",
+            "quantity": "1 cup (200g)",
+            "calories": 180.0,
+            "protein_g": 12.0,
+            "carbs_g": 28.0,
+            "fat_g": 3.0,
+            "fiber_g": 8.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          }
+        ],
+        "total_calories": 645.0,
+        "total_protein_g": 26.5,
+        "total_carbs_g": 85.0,
+        "total_fat_g": 23.0,
+        "total_fiber_g": 15.0
+      },
+      {
+        "meal_type": "dinner",
+        "items": [
+          {
+            "food_name": "Sweet Potato (baked)",
+            "food_id": "sweet_potato",
+            "quantity": "1 medium (150g)",
+            "calories": 135.0,
+            "protein_g": 3.0,
+            "carbs_g": 31.0,
+            "fat_g": 0.2,
+            "fiber_g": 5.0
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "2 large (100g)",
+            "calories": 155.0,
+            "protein_g": 12.6,
+            "carbs_g": 1.1,
+            "fat_g": 10.6,
+            "fiber_g": 0.0
+          },
+          {
+            "food_name": "Gotukola Sambol (Pennywort Salad)",
+            "food_id": "gotukola_sambol",
+            "quantity": "1 cup (100g)",
+            "calories": 45.0,
+            "protein_g": 2.5,
+            "carbs_g": 5.0,
+            "fat_g": 2.0,
+            "fiber_g": 3.0
+          }
+        ],
+        "total_calories": 335.0,
+        "total_protein_g": 18.1,
+        "total_carbs_g": 37.1,
+        "total_fat_g": 12.8,
+        "total_fiber_g": 8.0
+      },
+      {
+        "meal_type": "snack",
+        "items": [
+          {
+            "food_name": "Banana",
+            "food_id": "banana",
+            "quantity": "1 medium (120g)",
+            "calories": 105.0,
+            "protein_g": 1.3,
+            "carbs_g": 27.0,
+            "fat_g": 0.4,
+            "fiber_g": 3.1
+          },
+          {
+            "food_name": "Boiled Eggs",
+            "food_id": "eggs_boiled",
+            "quantity": "~74% of 2 large (100g)",
+            "calories": 116.1,
+            "protein_g": 9.4,
+            "carbs_g": 0.8,
+            "fat_g": 7.9,
+            "fiber_g": 0.0
+          }
+        ],
+        "total_calories": 221.1,
+        "total_protein_g": 10.7,
+        "total_carbs_g": 27.8,
+        "total_fat_g": 8.3,
+        "total_fiber_g": 3.1
+      }
+    ],
+    "total_daily_calories": 1610.1,
+    "total_protein_g": 95.0,
+    "total_carbs_g": 202.4,
+    "total_fat_g": 48.0,
+    "total_fiber_g": 29.6,
+    "target_calories": 2211.0,
+    "culture": "sri_lankan",
+    "dietary_goal": "weight_loss",
+    "llm_suggestions": [
+      "Increase protein to at least 120g per day for muscle maintenance while losing weight.",
+      "Add more fiber-rich foods like fruits, vegetables, and whole grains to support weight loss.",
+      "Consider adding healthy fats like nuts and seeds to the meal plan to increase calorie intake.",
+      "Review lunch portion sizes to ensure adequate calories (around 400-500 kcal) to meet daily target."
+    ],
+    "adaptations_made": [],
+    "cultural_tips": [
+      "Eat with your right hand, as the left hand is considered unclean.",
+      "Use a spoon to eat rice and curry, as it's customary.",
+      "Avoid finishing a meal completely, as it implies the host didn't provide enough food."
+    ]
+  },
+  "calorie_analysis": {
+    "target_calories": 2211.0,
+    "actual_calories": 1610.1,
+    "calorie_deviation": -27.2,
+    "meets_goal": false,
+    "protein_adequate": true,
+    "min_protein_needed": 62.4,
+    "actual_protein": 95.0,
+    "macronutrient_breakdown": {
+      "protein_pct": 23.4,
+      "carbs_pct": 49.9,
+      "fat_pct": 26.6
+    },
+    "recommendations": [
+      "Increase portions or add snacks — plan is 27.2% below target",
+      "Add more protein-rich foods to better meet macro targets"
+    ]
+  },
+  "final_report": "Lahiru Kappagoda's Meal Plan Analysis Report\n\nOverview:\nThe provided meal plan results in a significant calorie deficit, with an actual daily intake of 1610.1 kcal, falling short of the target by 27.2%. This substantial reduction may lead to nutrient deficiencies and hinder weight loss progress.\n\nNutritional Adequacy:\nThe plan's macronutrient breakdown falls short of the recommended protein content, with a shortfall of 33g (23.4% of daily calories). The carbohydrate and fat percentages are within acceptable limits.\n\nMeeting Dietary Goals:\nUnfortunately, this meal plan does not meet Lahiru's weight loss goal, as it fails to achieve the target calorie intake.\n\nKey Strengths:\nThe current plan is relatively low in calories, which may be beneficial for weight loss. Additionally, the macronutrient distribution is well-balanced.\n\nRecommendations:\nTo improve the plan and increase its effectiveness, we recommend:\n\n1. Increasing portion sizes or adding snacks to meet the daily calorie target.\n2. Incorporating more protein-rich foods (e.g., lean meats, fish, eggs, legumes) to better align with the recommended protein intake.\n3. Consulting a registered dietitian or nutritionist for personalized guidance on developing a balanced and sustainable meal plan.\n\nMotivational Note:\nLahiru, maintaining a healthy weight requires patience and dedication. With adjustments to your meal plan, you can set yourself up for success in achieving your weight loss goals."
+}
