@@ -1,0 +1,31 @@
+run this # Virtual Environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+node_modules/
+dist/
+.eslintcache
+
+# Logs and Outputs
+logs/
+output/
+*.log
+
+# Environment Variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
