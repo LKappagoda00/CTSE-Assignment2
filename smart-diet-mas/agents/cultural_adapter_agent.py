@@ -127,51 +127,14 @@ def cultural_adapter_node(state: AgentState) -> dict:
     adapted["adaptations_made"] = adaptations_made
 
     # ── Step 2: LLM enhancement for cultural notes ────────────────────────
-    cultural_notes = ""
-    try:
-        llm = ChatOllama(model=OLLAMA_MODEL, base_url=OLLAMA_BASE_URL, temperature=OLLAMA_TEMPERATURE)
-        prompt = (f"The meal plan for {culture} cuisine has been adapted with these changes: "
-                  f"{', '.join(adaptations_made) if adaptations_made else 'No changes needed'}. "
-                  f"Provide 2-3 brief cultural eating tips for {culture} cuisine. "
-                  f"Respond as a simple JSON: {{\"tips\": [\"tip1\", \"tip2\"]}}")
-        prompt = f"""
-        Analyze these cultural food substitutions for a {culture} diet.
-        User Goal: {profile.get('dietary_goal', 'general health')}
-        
-        Substitutions Performed:
-        {json.dumps(adapted_plan['meals'], indent=2)}
-        
-        Explain the architectural logic of these substitutions. 
-        Focus on how local ingredients ({culture}) maintain the nutritional baseline of a global healthy diet.
-        Output MUST be a JSON list of 3 analytical statements.
-        """
-        
-        try:
-            resp = llm.invoke(prompt)
-            cleaned_resp = resp.content.replace('```json', '').replace('```', '').strip()
-            logic_statements = json.loads(cleaned_resp)
-        except Exception as e:
-            logger.warning(f"LLM substitution logic failed: {e}")
-            logic_statements = [f"Substituted staples to align with {culture} culinary patterns.", "Maintained calorie counts within ±10% margin.", "Prioritized authentic regional fiber sources."]
-
-        notes = [f"Cultural Engine: Successfully adapted the plan to {culture} cuisine."]
-        notes.extend([f"Equivalence Logic: {s}" for s in logic_statements])
-
-        return {
-            "adapted_meal_plan": adapted_plan,
-            "analytical_logs": notes,
-            "messages": [f"CulturalAdapterAgent adapted plan to {culture}."],
-            "current_agent": "CulturalAdapterAgent"
-        }
-    except Exception as e:
-        logger.warning(f"LLM cultural tips failed: {e}")
-        return {
-            "messages": [f"CulturalAdapterAgent failed logic: {e}"],
-            "current_agent": "CulturalAdapterAgent"
-        }
-
+    # Skip LLM for now to avoid issues
     tracer.log_agent_end("CulturalAdapterAgent", {"adaptations": len(adaptations_made)})
-    return output
+    return {
+        "adapted_meal_plan": adapted,
+        "analytical_logs": [f"Cultural Engine: Adapted to {culture} cuisine with {len(adaptations_made)} substitutions."],
+        "messages": [f"CulturalAdapterAgent adapted plan to {culture}."],
+        "current_agent": "CulturalAdapterAgent"
+    }
 
 
 def _find_cultural_replacement(food_id: str, food_data: dict, culture: str,

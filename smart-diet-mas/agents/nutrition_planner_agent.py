@@ -9,9 +9,10 @@ System Prompt:
     You are the Nutrition Planner Agent. Your job is to create a balanced daily
     meal plan that meets the user's caloric target and macronutrient goals.
     Use the food database and meal generator tools. Distribute calories across
-    breakfast (25%), lunch (35%), dinner (30%), and snack (10%).
+    breakfast (25%), lunch (35%), dinner (30%), and snack (10%). Consider user's
+    dietary restrictions, preferred and disliked foods, budget, and cooking time.
 
-Input:  user_profile, bmi_result, target_calories
+Input:  user_profile, bmi_result, target_calories (including medical_conditions, dietary_restrictions, preferred_foods, disliked_foods, budget_per_day, cooking_time_available)
 Output: daily_meal_plan
 
 Reasoning Strategy: Tool-augmented generation. The agent uses the MealPlanGenerator
@@ -66,6 +67,12 @@ def nutrition_planner_node(state: AgentState) -> dict:
         "target_calories": target_cal,
         "dietary_goal": profile.get("dietary_goal", "maintenance"),
         "culture": profile.get("cultural_preference", "western"),
+        "allergies": profile.get("allergies", []),
+        "dietary_restrictions": profile.get("dietary_restrictions", []),
+        "preferred_foods": profile.get("preferred_foods", []),
+        "disliked_foods": profile.get("disliked_foods", []),
+        "budget_per_day": profile.get("budget_per_day", 0),
+        "cooking_time_available": profile.get("cooking_time_available", "moderate"),
     }, {})
 
     meal_plan = generator.generate_daily_plan(
@@ -73,6 +80,11 @@ def nutrition_planner_node(state: AgentState) -> dict:
         dietary_goal=profile.get("dietary_goal", "maintenance"),
         culture=profile.get("cultural_preference", "western"),
         allergies=profile.get("allergies", []),
+        dietary_restrictions=profile.get("dietary_restrictions", []),
+        preferred_foods=profile.get("preferred_foods", []),
+        disliked_foods=profile.get("disliked_foods", []),
+        budget_per_day=profile.get("budget_per_day", 0),
+        cooking_time_available=profile.get("cooking_time_available", "moderate"),
     )
 
     # ── Step 2: Consult LLM for nutritional suggestions ───────────────────

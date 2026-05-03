@@ -1,0 +1,82 @@
+============================================================
+  SMART DIET & NUTRITION — PERSONALIZED MEAL PLAN
+============================================================
+  Generated: 2026-05-03 13:34
+
+────────────────────────────────────────────────────────────
+  USER PROFILE
+────────────────────────────────────────────────────────────
+  Name.......................... Kasun Perera
+  Age........................... 28
+  Gender........................ male
+  Weight Kg..................... 78.0
+  Height Cm..................... 175.0
+  Activity Level................ moderately_active
+  Dietary Goal.................. weight_loss
+  Allergies..................... []
+  Cultural Preference........... sri_lankan
+  Medical Conditions............ []
+  Dietary Restrictions.......... []
+  Preferred Foods............... ['rice', 'chicken', 'vegetables']
+  Disliked Foods................ ['fish']
+  Budget Per Day................ 30.0
+  Cooking Time Available........ moderate
+
+────────────────────────────────────────────────────────────
+  BMI ANALYSIS
+────────────────────────────────────────────────────────────
+  BMI Value: 25.5
+  Category:  overweight
+  Note:      BMI of 25.5 is classified as Overweight. A moderate calorie deficit with exercise is recommended.
+
+────────────────────────────────────────────────────────────
+  DAILY MEAL PLAN (Day 1)
+  Culture: sri_lankan
+  Target: 2195.0 kcal
+────────────────────────────────────────────────────────────
+
+  ◆ BREAKFAST (612.8 kcal)
+  ········································
+    • Kottu Roti (Vegetable)         1 plate (300g)       420.0 kcal | P:12.0g C:52.0g F:18.0g
+    • Boiled Eggs                    ~83% of 2 large (100g) 128.8 kcal | P:10.5g C:0.9g F:8.8g
+    • Papaya                         1 cup (145g)         62.0 kcal | P:0.7g C:16.0g F:0.4g
+    • Plain Tea                      1 cup (240ml)        2.0 kcal | P:0.0g C:0.5g F:0.0g
+
+  ◆ LUNCH (490.0 kcal)
+  ········································
+    • Idli (Steamed Rice Cake)       3 pieces (150g)      175.0 kcal | P:4.0g C:36.0g F:0.5g
+    • Boiled Eggs                    2 large (100g)       155.0 kcal | P:12.6g C:1.1g F:10.6g
+    • Vegetable Curry (Coconut Milk) 1 cup (200g)         160.0 kcal | P:4.0g C:12.0g F:11.0g
+
+  ◆ DINNER (693.5 kcal)
+  ········································
+    • White Rice (cooked)            1 cup (200g)         206.0 kcal | P:4.3g C:44.5g F:0.4g
+    • Sri Lankan Chicken Curry       1 cup (200g)         285.0 kcal | P:28.0g C:8.0g F:16.0g
+    • Vegetable Curry (Coconut Milk) 1 cup (200g)         160.0 kcal | P:4.0g C:12.0g F:11.0g
+    • Coconut Sambol (Pol Sambol)    ~50% of 2 tbsp (30g) 42.5 kcal | P:0.5g C:1.5g F:4.0g
+
+  ◆ SNACK (219.5 kcal)
+  ········································
+    • Banana                         1 medium (120g)      105.0 kcal | P:1.3g C:27.0g F:0.4g
+    • Boiled Eggs                    ~73% of 2 large (100g) 114.5 kcal | P:9.3g C:0.8g F:7.8g
+
+  ── DAILY TOTALS ──
+  Calories:  2015.8 kcal
+  Protein:   91.2 g
+  Carbs:     212.3 g
+  Fat:       88.9 g
+
+────────────────────────────────────────────────────────────
+  CALORIE ANALYSIS
+────────────────────────────────────────────────────────────
+  Target:    2195.0 kcal
+  Actual:    2015.8 kcal
+  Deviation: -8.2%
+  Meets Goal: ✓ Yes
+
+  Recommendations:
+    → Add more protein-rich foods to better meet macro targets
+
+============================================================
+  End of Report
+============================================================

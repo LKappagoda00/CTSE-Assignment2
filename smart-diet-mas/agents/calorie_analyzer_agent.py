@@ -10,7 +10,7 @@ System Prompt:
     deviation, protein adequacy, and macro balance. Provide actionable
     recommendations if the plan falls short.
 
-Input:  adapted_meal_plan, user_profile, target_calories, bmi_result
+Input:  adapted_meal_plan, user_profile, target_calories, bmi_result (including medical_conditions, dietary_restrictions)
 Output: calorie_analysis, final_report
 
 Reasoning Strategy: Rule-based calculation for objective metrics,

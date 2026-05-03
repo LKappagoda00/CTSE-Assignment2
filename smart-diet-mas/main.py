@@ -1,80 +1,35 @@
 """
 Smart Diet & Nutrition Multi-Agent System — Main Entry Point
 
-This is the primary executable for the multi-agent system.
-It demonstrates the complete workflow with example user input
-and provides an interactive CLI mode.
+This starts the FastAPI server that receives meal plan requests from the frontend.
+The server runs continuously and processes user inputs through the multi-agent workflow.
 
 Usage:
-    python main.py                  # Run with default example input
-    python main.py --interactive    # Interactive CLI mode
+    python main.py    # Start FastAPI web server
 """
 from __future__ import annotations
-import sys
-import json
-import argparse
 from rich.console import Console
-from rich.panel import Panel
-from rich.table import Table
-from rich.text import Text
 
 # Must import observability first to configure logging
 import observability
-from observability import tracer
-from orchestration.workflow import run_workflow
-from config import SUPPORTED_CULTURES
 
 console = Console()
 
 
-# ── Example Inputs ─────────────────────────────────────────────────────────────
-EXAMPLE_INPUTS = {
-    "sri_lankan_user": {
-        "name": "Kasun Perera",
-        "age": 28,
-        "gender": "male",
-        "weight_kg": 78,
-        "height_cm": 175,
-        "activity_level": "moderately_active",
-        "dietary_goal": "weight_loss",
-        "allergies": [],
-        "cultural_preference": "sri_lankan",
-    },
-    "indian_user": {
-        "name": "Priya Sharma",
-        "age": 32,
-        "gender": "female",
-        "weight_kg": 62,
-        "height_cm": 160,
-        "activity_level": "lightly_active",
-        "dietary_goal": "healthy_eating",
-        "allergies": ["fish"],
-        "cultural_preference": "indian_north",
-    },
-    "western_user": {
-        "name": "John Smith",
-        "age": 45,
-        "gender": "male",
-        "weight_kg": 95,
-        "height_cm": 180,
-        "activity_level": "sedentary",
-        "dietary_goal": "weight_loss",
-        "allergies": ["nuts"],
-        "cultural_preference": "western",
-    },
-}
+def main():
+    """Main entry point - starts the FastAPI server."""
+    console.print("[bold green]Starting Smart Diet MAS FastAPI Server...[/bold green]")
+    console.print("[dim]Server will be available at http://localhost:8000[/dim]")
+    console.print("[dim]Ready to receive meal plan requests from frontend[/dim]")
+    console.print("[dim]Press Ctrl+C to stop the server[/dim]")
+    
+    import uvicorn
+    from api import app
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
-def display_results(state: dict) -> None:
-    """Display workflow results using rich formatting."""
-    console.print()
-    # Header
-    console.print(Panel.fit(
-        "[bold cyan]Smart Diet & Nutrition — Results[/bold cyan]",
-        border_style="cyan",
-    ))
-
-    # User Profile
+if __name__ == "__main__":
+    main()
     profile = state.get("user_profile", {})
     bmi = state.get("bmi_result", {})
     table = Table(title="[Profile]", border_style="blue")
@@ -194,29 +149,15 @@ def interactive_mode() -> dict:
 
 
 def main():
-    """Main entry point."""
-    parser = argparse.ArgumentParser(description="Smart Diet & Nutrition Multi-Agent System")
-    parser.add_argument("--interactive", "-i", action="store_true", help="Interactive CLI mode")
-    parser.add_argument("--example", "-e", choices=list(EXAMPLE_INPUTS.keys()),
-                        default="sri_lankan_user", help="Run with example input")
-    args = parser.parse_args()
-
-    if args.interactive:
-        user_input = interactive_mode()
-    else:
-        user_input = EXAMPLE_INPUTS[args.example]
-        console.print(f"[dim]Using example: {args.example}[/dim]")
-        console.print(f"[dim]Input: {json.dumps(user_input, indent=2)}[/dim]")
-
-    console.print()
-    console.print("[bold yellow]Running Multi-Agent Workflow...[/bold yellow]")
-    console.print()
-
-    # Run the workflow
-    final_state = run_workflow(user_input)
-
-    # Display results
-    display_results(final_state)
+    """Main entry point - starts the FastAPI server."""
+    console.print("[bold green]Starting Smart Diet MAS FastAPI Server...[/bold green]")
+    console.print("[dim]Server will be available at http://localhost:8000[/dim]")
+    console.print("[dim]Ready to receive meal plan requests from frontend[/dim]")
+    console.print("[dim]Press Ctrl+C to stop the server[/dim]")
+    
+    import uvicorn
+    from api import app
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
 if __name__ == "__main__":

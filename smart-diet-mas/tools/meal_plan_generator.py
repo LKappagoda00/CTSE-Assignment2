@@ -23,8 +23,32 @@ class MealPlanGeneratorTool:
         self._food_db = food_db or FoodDatabaseTool()
         logger.info("MealPlanGeneratorTool initialized")
 
+    def _filter_by_dietary_restrictions(self, foods: list[dict], restrictions: list[str]) -> list[dict]:
+        """Filter foods based on dietary restrictions."""
+        filtered = foods
+        for restriction in restrictions:
+            if restriction == "vegetarian":
+                # Exclude meats, fish, poultry
+                exclude_keywords = ["chicken", "fish", "beef", "pork", "lamb", "meat", "poultry"]
+                filtered = [f for f in filtered if not any(k in f["name"].lower() for k in exclude_keywords)]
+            elif restriction == "vegan":
+                # Exclude animal products
+                exclude_keywords = ["chicken", "fish", "beef", "pork", "lamb", "meat", "poultry", "milk", "cheese", "yogurt", "egg", "butter"]
+                filtered = [f for f in filtered if not any(k in f["name"].lower() for k in exclude_keywords)]
+            elif restriction == "gluten_free":
+                # Exclude wheat-based
+                exclude_keywords = ["wheat", "bread", "pasta", "roti", "naan"]
+                filtered = [f for f in filtered if not any(k in f["name"].lower() for k in exclude_keywords)]
+            # Add more restrictions as needed
+        return filtered
+
     def generate_daily_plan(self, target_calories: float, dietary_goal: str,
                             culture: str = "western", allergies: Optional[list[str]] = None,
+                            dietary_restrictions: Optional[list[str]] = None,
+                            preferred_foods: Optional[list[str]] = None,
+                            disliked_foods: Optional[list[str]] = None,
+                            budget_per_day: float = 0,
+                            cooking_time_available: str = "moderate",
                             day_number: int = 1) -> dict:
         """Generate a complete daily meal plan.
 
@@ -33,6 +57,11 @@ class MealPlanGeneratorTool:
             dietary_goal: weight_loss | muscle_gain | maintenance | healthy_eating.
             culture: Cultural food preference identifier.
             allergies: List of food allergies to avoid.
+            dietary_restrictions: List of dietary restrictions (e.g., vegetarian, vegan).
+            preferred_foods: List of preferred food names.
+            disliked_foods: List of disliked food names.
+            budget_per_day: Daily budget in currency units (0 for no limit).
+            cooking_time_available: quick | moderate | extensive.
             day_number: Day number in the meal plan.
         Returns:
             Dictionary representing the daily meal plan.
@@ -42,12 +71,20 @@ class MealPlanGeneratorTool:
         if target_calories < 800 or target_calories > 6000:
             raise ValueError(f"Target calories must be 800-6000, got {target_calories}")
         allergies = [a.lower() for a in (allergies or [])]
+        dietary_restrictions = [r.lower() for r in (dietary_restrictions or [])]
+        disliked_foods = [f.lower() for f in (disliked_foods or [])]
         available = self._food_db.get_foods_by_culture(culture)
         if not available:
             logger.warning(f"No foods for '{culture}', fallback to 'western'")
             available = self._food_db.get_foods_by_culture("western")
         if allergies:
             available = [f for f in available if not any(a in f["name"].lower() for a in allergies)]
+        # Filter by dietary restrictions
+        if dietary_restrictions:
+            available = self._filter_by_dietary_restrictions(available, dietary_restrictions)
+        # Filter out disliked foods
+        if disliked_foods:
+            available = [f for f in available if not any(d in f["name"].lower() for d in disliked_foods)]
         by_cat = {}
         for f in available:
             by_cat.setdefault(f.get("category", "other"), []).append(f)

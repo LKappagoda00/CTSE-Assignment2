@@ -26,12 +26,16 @@ function App() {
   const [cultures, setCultures] = useState([])
   const [logIndex, setLogIndex] = useState(0)
   const logEndRef = useRef(null)
+  const [pastData, setPastData] = useState([])
   const [formData, setFormData] = useState({
     name: 'Kasun Perera', age: 28, gender: 'male', weight_kg: 78, height_cm: 175,
-    activity_level: 'moderately_active', dietary_goal: 'weight_loss', cultural_preference: 'sri_lankan', allergies: []
+    activity_level: 'moderately_active', dietary_goal: 'weight_loss', cultural_preference: 'sri_lankan', allergies: [],
+    medical_conditions: [], dietary_restrictions: [], preferred_foods: ['rice', 'chicken', 'vegetables'], disliked_foods: ['fish'],
+    budget_per_day: 30, cooking_time_available: 'moderate'
   })
 
   useEffect(() => { fetchCultures() }, [])
+  useEffect(() => { fetchPastData() }, [])  // Fetch past data on load
   useEffect(() => { if (loading && result) scrollToBottom() }, [logIndex])
 
   const scrollToBottom = () => logEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -41,6 +45,21 @@ function App() {
       const resp = await axios.get(`${API_BASE}/cultures`)
       setCultures(resp.data.cultures)
     } catch (err) { console.error('Failed to fetch cultures', err) }
+  }
+
+  const fetchPastData = async () => {
+    try {
+      const resp = await axios.get(`${API_BASE}/past-data`)
+      setPastData(resp.data.past_data)
+    } catch (err) { console.error('Failed to fetch past data', err) }
+  }
+
+  const loadPastPlan = async (planId) => {
+    try {
+      const resp = await axios.get(`${API_BASE}/past-data/${planId}`)
+      setResult(resp.data.result)
+      setCurrentStep(1)
+    } catch (err) { console.error('Failed to load past plan', err) }
   }
 
   const runWorkflow = async () => {
@@ -57,6 +76,7 @@ function App() {
       }
       setResult(resp.data)
       setCurrentStep(1)
+      fetchPastData()  // Refresh past data after new run
     } catch (err) {
       setError(err.response?.data?.detail || 'Is the backend active? (python api.py)')
     } finally {
@@ -132,12 +152,12 @@ function App() {
 
       <main style={{ marginTop: '2rem' }}>
         <AnimatePresence mode="wait">
-          {currentStep === 0 ? (
-            <motion.div key="st0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="grid" style={{ gridTemplateColumns: '1.2fr 0.8fr', gap: '2rem' }}>
+          {currentStep === 0 && (
+            <motion.div key="st0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="grid" style={{ gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem' }}>
               <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
                   <BrainCircuit size={28} color="var(--primary)" />
-                  <h3 style={{ fontSize: '1.5rem' }}>System Architecture</h3>
+                  <h3 style={{ fontSize: '1.5rem' }}>Personalized Nutrition Intelligence</h3>
                 </div>
                 <div className="workflow-diagram">
                    {/* Visual nodes with dotted lines */}
@@ -167,13 +187,35 @@ function App() {
                   <div className="fg"><label>AGE</label><input type="number" name="age" value={formData.age} onChange={e => setFormData({...formData, age: e.target.value})} /></div>
                   <div className="fg"><label>GENDER</label>
                     <select name="gender" value={formData.gender} onChange={e => setFormData({...formData, gender: e.target.value})}>
-                      <option value="male">Male</option><option value="female">Female</option>
+                      <option value="male">Male</option><option value="female">Female</option><option value="other">Other</option>
                     </select>
                   </div>
                   <div className="fg"><label>WEIGHT (KG)</label><input type="number" name="weight_kg" value={formData.weight_kg} onChange={e => setFormData({...formData, weight_kg: e.target.value})} /></div>
+                  <div className="fg"><label>HEIGHT (CM)*</label><input type="number" name="height_cm" value={formData.height_cm} onChange={e => setFormData({...formData, height_cm: e.target.value})} required /></div>
+                  <div className="fg"><label>ACTIVITY LEVEL</label>
+                    <select name="activity_level" value={formData.activity_level} onChange={e => setFormData({...formData, activity_level: e.target.value})}>
+                      <option value="sedentary">Sedentary</option><option value="lightly_active">Lightly Active</option><option value="moderately_active">Moderately Active</option><option value="very_active">Very Active</option><option value="extra_active">Extra Active</option>
+                    </select>
+                  </div>
+                  <div className="fg"><label>DIETARY GOAL</label>
+                    <select name="dietary_goal" value={formData.dietary_goal} onChange={e => setFormData({...formData, dietary_goal: e.target.value})}>
+                      <option value="weight_loss">Weight Loss</option><option value="muscle_gain">Muscle Gain</option><option value="maintenance">Maintenance</option><option value="healthy_eating">Healthy Eating</option>
+                    </select>
+                  </div>
                   <div className="fg"><label>CULTURE</label>
                     <select name="cultural_preference" value={formData.cultural_preference} onChange={e => setFormData({...formData, cultural_preference: e.target.value})}>
                       {cultures.map(c => <option key={c} value={c}>{c.toUpperCase()}</option>)}
+                    </select>
+                  </div>
+                  <div className="fg"><label>ALLERGIES</label><input type="text" name="allergies" value={formData.allergies.join(', ')} onChange={e => setFormData({...formData, allergies: e.target.value.split(',').map(s => s.trim()).filter(s => s)})} placeholder="e.g., nuts, fish" /></div>
+                  <div className="fg"><label>MEDICAL CONDITIONS</label><input type="text" name="medical_conditions" value={formData.medical_conditions.join(', ')} onChange={e => setFormData({...formData, medical_conditions: e.target.value.split(',').map(s => s.trim()).filter(s => s)})} placeholder="e.g., diabetes, hypertension" /></div>
+                  <div className="fg"><label>DIETARY RESTRICTIONS</label><input type="text" name="dietary_restrictions" value={formData.dietary_restrictions.join(', ')} onChange={e => setFormData({...formData, dietary_restrictions: e.target.value.split(',').map(s => s.trim()).filter(s => s)})} placeholder="e.g., vegetarian, gluten_free" /></div>
+                  <div className="fg"><label>PREFERRED FOODS</label><input type="text" name="preferred_foods" value={formData.preferred_foods.join(', ')} onChange={e => setFormData({...formData, preferred_foods: e.target.value.split(',').map(s => s.trim()).filter(s => s)})} placeholder="e.g., rice, chicken, vegetables" /></div>
+                  <div className="fg"><label>DISLIKED FOODS</label><input type="text" name="disliked_foods" value={formData.disliked_foods.join(', ')} onChange={e => setFormData({...formData, disliked_foods: e.target.value.split(',').map(s => s.trim()).filter(s => s)})} placeholder="e.g., spinach, fish" /></div>
+                  <div className="fg"><label>BUDGET PER DAY ($)</label><input type="number" name="budget_per_day" value={formData.budget_per_day} onChange={e => setFormData({...formData, budget_per_day: parseFloat(e.target.value) || 0})} /></div>
+                  <div className="fg"><label>COOKING TIME</label>
+                    <select name="cooking_time_available" value={formData.cooking_time_available} onChange={e => setFormData({...formData, cooking_time_available: e.target.value})}>
+                      <option value="quick">Quick</option><option value="moderate">Moderate</option><option value="extensive">Extensive</option>
                     </select>
                   </div>
                   <button type="submit" className="btn-launch" disabled={loading}>
@@ -182,16 +224,31 @@ function App() {
                 </form>
                 {error && <div className="err-msg">{error}</div>}
               </div>
+
+              <div className="glass-card">
+                <h3>Past Plans</h3>
+                <div style={{ maxHeight: '400px', overflowY: 'auto' }}>
+                  {pastData.length > 0 ? pastData.map((plan, i) => (
+                    <div key={i} className="past-plan-item" onClick={() => loadPastPlan(plan.id)} style={{ cursor: 'pointer', padding: '0.75rem', borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '0.5rem' }}>
+                      <div style={{ fontWeight: 'bold' }}>{plan.user_name}</div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>{plan.timestamp.replace(/_/g, ' ').replace(/(\d{4})(\d{2})(\d{2}) (\d{2})(\d{2})(\d{2})/, '$1-$2-$3 $4:$5:$6')}</div>
+                      <div style={{ fontSize: '0.8rem' }}>Goal: {plan.dietary_goal.replace('_', ' ')} | BMI: {plan.bmi} | Calories: {plan.target_calories}</div>
+                    </div>
+                  )) : <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-dim)' }}>No past plans yet</div>}
+                </div>
+              </div>
             </motion.div>
-          ) : result && (
-            <motion.div key={currentStep} className="agent-page-grid">
+          )}
+
+          {result && currentStep > 0 && (
+            <motion.div key={`st${currentStep}`} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} className="agent-page-grid">
               <div className="agent-main">
                 <div className="page-header">
                   <div className="agent-badge" style={{ background: STEPS[currentStep].color }}>AGENT 0{currentStep}</div>
                   <h2 style={{ fontSize: '2.5rem', fontWeight: '800' }}>{STEPS[currentStep].name}</h2>
                 </div>
 
-                {currentStep === 1 && (
+                {currentStep === 1 && result.bmi_result && result.target_calories && (
                   <div className="agent-details fade-in">
                     <div className="grid">
                       <div className="glass-card data-box">
@@ -200,16 +257,26 @@ function App() {
                         <div className="db-sub" style={{ color: STEPS[1].color }}>{result.bmi_result.category.toUpperCase()}</div>
                       </div>
                       <div className="glass-card data-box">
-                        <div className="db-label">DAILY HYDRATION</div>
-                        <div className="db-value">{result.hydration_target}L</div>
-                        <div className="db-sub">H₂O TARGET</div>
+                        <div className="db-label">TARGET CALORIES</div>
+                        <div className="db-value">{result.target_calories} kcal</div>
+                        <div className="db-sub">DAILY INTAKE</div>
                       </div>
                     </div>
                     <HandoffCard color={STEPS[1].color} text={`UserProfileAgent translated raw inputs into a Metabolic Baseline of ${result.target_calories} kcal/day.`} />
                   </div>
                 )}
 
-                {currentStep === 2 && (
+                {currentStep === 1 && (!result.bmi_result || !result.target_calories) && (
+                  <div className="agent-details fade-in">
+                    <div className="glass-card primary-output" style={{ borderLeft: `4px solid ${STEPS[1].color}` }}>
+                       <h4 style={{ color: STEPS[1].color }}>PROFILE ANALYSIS IN PROGRESS</h4>
+                       <p>The UserProfileAgent is calculating your BMI and metabolic baseline...</p>
+                    </div>
+                    <HandoffCard color={STEPS[1].color} text={`UserProfileAgent is processing your profile data.`} />
+                  </div>
+                )}
+
+                {currentStep === 2 && result.daily_meal_plan && (
                   <div className="agent-details fade-in">
                      <div className="grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
                         {result.daily_meal_plan.meals.map((m, i) => (
@@ -224,7 +291,17 @@ function App() {
                   </div>
                 )}
 
-                {currentStep === 3 && (
+                {currentStep === 2 && !result.daily_meal_plan && (
+                  <div className="agent-details fade-in">
+                     <div className="glass-card primary-output" style={{ borderLeft: `4px solid ${STEPS[2].color}` }}>
+                        <h4 style={{ color: STEPS[2].color }}>MEAL PLAN GENERATION IN PROGRESS</h4>
+                        <p>The NutritionPlannerAgent is currently generating your personalized meal plan...</p>
+                     </div>
+                     <HandoffCard color={STEPS[2].color} text={`NutritionPlannerAgent is constructing a meal architecture based on your metabolic baseline.`} />
+                  </div>
+                )}
+
+                {currentStep === 3 && result.adapted_meal_plan && (
                   <div className="agent-details fade-in">
                     <div className="glass-card primary-output" style={{ borderLeft: `4px solid ${STEPS[3].color}` }}>
                        <h4 style={{ color: STEPS[3].color }}>CUISINE SPECIALIZATION: {formData.cultural_preference.toUpperCase()}</h4>
@@ -241,7 +318,17 @@ function App() {
                   </div>
                 )}
 
-                {currentStep === 4 && (
+                {currentStep === 3 && !result.adapted_meal_plan && (
+                  <div className="agent-details fade-in">
+                    <div className="glass-card primary-output" style={{ borderLeft: `4px solid ${STEPS[3].color}` }}>
+                       <h4 style={{ color: STEPS[3].color }}>CUISINE ADAPTATION IN PROGRESS</h4>
+                       <p>The CulturalAdapterAgent is currently processing cultural adaptations...</p>
+                    </div>
+                    <HandoffCard color={STEPS[3].color} text={`CulturalAdapterAgent is adapting the meal plan to ${formData.cultural_preference} cuisine.`}/>
+                  </div>
+                )}
+
+                {currentStep === 4 && result.final_report && result.calorie_analysis && (
                    <div className="agent-details fade-in">
                       <div className="glass-card" style={{ borderLeft: `8px solid ${STEPS[4].color}`, background: 'rgba(244, 63, 94, 0.05)' }}>
                          <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>FINAL SYSTEM VERDICT</h3>
@@ -252,6 +339,16 @@ function App() {
                          <div className="glass-card"><strong>FAT</strong> {result.calorie_analysis.macronutrient_breakdown.fat_pct}%</div>
                       </div>
                       <button onClick={() => {setResult(null); setCurrentStep(0)}} className="btn-restart">RESTART ORCHESTRATION</button>
+                   </div>
+                )}
+
+                {currentStep === 4 && (!result.final_report || !result.calorie_analysis) && (
+                   <div className="agent-details fade-in">
+                      <div className="glass-card" style={{ borderLeft: `8px solid ${STEPS[4].color}`, background: 'rgba(244, 63, 94, 0.05)' }}>
+                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>ANALYSIS IN PROGRESS</h3>
+                         <p>The CalorieAnalyzerAgent is performing final nutritional analysis...</p>
+                      </div>
+                      <HandoffCard color={STEPS[4].color} text={`CalorieAnalyzerAgent is validating the meal plan against nutritional targets.`} />
                    </div>
                 )}
 
@@ -290,7 +387,7 @@ function App() {
 
         .btn-launch { background: var(--p); color: #000; border: none; padding: 1rem; border-radius: 0.75rem; font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: transform 0.2s; }
         .btn-launch:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3); }
-        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+        .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
         .fg { display: flex; flex-direction: column; gap: 0.4rem; }
         .fg.full { grid-column: span 2; }
         label { font-size: 0.65rem; font-weight: 800; color: var(--dim); letter-spacing: 1px; }
@@ -303,7 +400,7 @@ function App() {
         .db-value { font-size: 2.5rem; font-weight: 900; margin: 0.5rem 0; }
         .db-sub { font-size: 0.75rem; font-weight: 800; }
 
-        .handoff-card { background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.75rem; margin-top: 2rem; }
+        .past-plan-item:hover { background: rgba(255,255,255,0.05); border-radius: 0.5rem; }
         .intel-sidebar { height: 100%; display: flex; flex-direction: column; background: #0b1120; border-color: rgba(139, 92, 246, 0.2); }
         .sidebar-header { display: flex; align-items: center; gap: 0.75rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .log-container { flex: 1; padding: 1.5rem 0; overflow-y: auto; display: flex; flex-direction: column; gap: 1.25rem; }

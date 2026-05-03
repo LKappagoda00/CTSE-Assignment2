@@ -9,7 +9,7 @@ System Prompt:
     calculate BMI, and determine daily caloric needs. You must ensure all inputs
     are within safe medical ranges and flag any anomalies.
 
-Input:  raw_input dict with user-provided data
+Input:  raw_input dict with user-provided data including name, age, gender, weight_kg, height_cm (required for BMI), activity_level, dietary_goal, allergies, cultural_preference, medical_conditions, dietary_restrictions, preferred_foods, disliked_foods, budget_per_day, cooking_time_available
 Output: user_profile (validated JSON), bmi_result, target_calories
 
 Reasoning Strategy: Rule-based validation + deterministic calculations.
@@ -19,7 +19,7 @@ Reasoning Strategy: Rule-based validation + deterministic calculations.
 from __future__ import annotations
 from loguru import logger
 from state import AgentState
-from tools.bmi_calculator import calculate_bmi, calculate_bmr, calculate_tdee, calculate_target_calories, calculate_water_intake
+from tools.bmi_calculator import calculate_bmi, calculate_bmr, calculate_tdee, calculate_target_calories
 from observability import tracer
 
 
@@ -35,11 +35,13 @@ Your responsibilities:
 Constraints:
 - Age must be 10-120 years
 - Weight must be 20-500 kg
-- Height must be 50-300 cm
+- Height must be 50-300 cm (required for BMI calculation)
 - Gender must be male/female/other
 - Goal must be one of: weight_loss, muscle_gain, maintenance, healthy_eating
 - Activity level must be one of: sedentary, lightly_active, moderately_active, very_active, extra_active
 - Cultural preference must be supported
+- Dietary restrictions must be from: vegetarian, vegan, gluten_free, dairy_free, keto, paleo, low_carb, high_protein
+- Cooking time must be quick/moderate/extensive
 
 You must NEVER provide medical advice. Only calculate and validate."""
 
@@ -48,6 +50,8 @@ VALID_GOALS = {"weight_loss", "muscle_gain", "maintenance", "healthy_eating"}
 VALID_GENDERS = {"male", "female", "other"}
 VALID_ACTIVITIES = {"sedentary", "lightly_active", "moderately_active", "very_active", "extra_active"}
 VALID_CULTURES = {"sri_lankan", "indian_north", "indian_south", "western", "mediterranean", "east_asian"}
+VALID_DIETARY_RESTRICTIONS = {"vegetarian", "vegan", "gluten_free", "dairy_free", "keto", "paleo", "low_carb", "high_protein"}
+VALID_COOKING_TIMES = {"quick", "moderate", "extensive"}
 
 
 def validate_input(raw: dict) -> tuple[dict, list[str]]:
@@ -123,6 +127,52 @@ def validate_input(raw: dict) -> tuple[dict, list[str]]:
         culture = "western"
     cleaned["cultural_preference"] = culture
 
+    # Medical conditions
+    medical_conditions = raw.get("medical_conditions", [])
+    if isinstance(medical_conditions, str):
+        medical_conditions = [c.strip() for c in medical_conditions.split(",") if c.strip()]
+    cleaned["medical_conditions"] = medical_conditions
+
+    # Dietary restrictions
+    dietary_restrictions = raw.get("dietary_restrictions", [])
+    if isinstance(dietary_restrictions, str):
+        dietary_restrictions = [r.strip().lower() for r in dietary_restrictions.split(",") if r.strip()]
+    invalid_restrictions = [r for r in dietary_restrictions if r not in VALID_DIETARY_RESTRICTIONS]
+    if invalid_restrictions:
+        errors.append(f"Invalid dietary restrictions: {invalid_restrictions}, ignoring them")
+        dietary_restrictions = [r for r in dietary_restrictions if r in VALID_DIETARY_RESTRICTIONS]
+    cleaned["dietary_restrictions"] = dietary_restrictions
+
+    # Preferred foods
+    preferred_foods = raw.get("preferred_foods", [])
+    if isinstance(preferred_foods, str):
+        preferred_foods = [f.strip() for f in preferred_foods.split(",") if f.strip()]
+    cleaned["preferred_foods"] = preferred_foods
+
+    # Disliked foods
+    disliked_foods = raw.get("disliked_foods", [])
+    if isinstance(disliked_foods, str):
+        disliked_foods = [f.strip() for f in disliked_foods.split(",") if f.strip()]
+    cleaned["disliked_foods"] = disliked_foods
+
+    # Budget per day
+    try:
+        budget = float(raw.get("budget_per_day", 0))
+        if budget < 0:
+            errors.append(f"Budget {budget} cannot be negative")
+            budget = 0
+        cleaned["budget_per_day"] = budget
+    except (ValueError, TypeError):
+        errors.append(f"Invalid budget: {raw.get('budget_per_day')}")
+        cleaned["budget_per_day"] = 0.0
+
+    # Cooking time available
+    cooking_time = str(raw.get("cooking_time_available", "moderate")).lower().strip()
+    if cooking_time not in VALID_COOKING_TIMES:
+        errors.append(f"Invalid cooking time '{cooking_time}', defaulting to 'moderate'")
+        cooking_time = "moderate"
+    cleaned["cooking_time_available"] = cooking_time
+
     return cleaned, errors
 
 
@@ -148,22 +198,20 @@ def user_profile_node(state: AgentState) -> dict:
 
     tdee = calculate_tdee(bmr, profile["activity_level"])
     target = calculate_target_calories(tdee, profile["dietary_goal"])
-    hydration = calculate_water_intake(profile["weight_kg"], profile["activity_level"])
     
-    tracer.log_agent_end("UserProfileAgent", {"target": target, "hydration": hydration})
-    logger.info(f"UserProfileAgent complete: {profile['name']}, target {target} kcal, hydration {hydration}L")
+    tracer.log_agent_end("UserProfileAgent", {"target": target})
+    logger.info(f"UserProfileAgent complete: {profile['name']}, target {target} kcal")
     
     return {
         "user_profile": profile,
-        "bmi_result": bmi_res,
+        "bmi_result": bmi_result,
         "target_calories": target,
-        "hydration_target": hydration,
         "analytical_logs": [
             f"Metabolic Analysis: Based on weight ({profile['weight_kg']}kg) and activity ({profile['activity_level']}), "
             f"your BMR is {round(bmr)}kcal, TDEE is {round(tdee)}kcal. A daily intake of {target}kcal is recommended "
             f"to achieve {profile['dietary_goal'].replace('_', ' ')}."
         ],
         "messages": [f"UserProfileAgent calculated metrics for {profile['name']}."],
-        "errors": errors,
+        "errors": validation_errors,
         "current_agent": "UserProfileAgent",
     }
